@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 type BrandIconProps = {
   className?: string;
   dark?: boolean;
@@ -22,45 +20,45 @@ function BrandIcon({
 }
 
 export function FabricIcon(props: BrandIconProps) {
-  return <BrandIcon src="/images/icon-fabric.png" alt="" {...props} />;
+  return <BrandIcon src="/images/icon-fabric.png" {...props} />;
 }
 
 export function PinsIcon(props: BrandIconProps) {
-  return <BrandIcon src="/images/icon-pins.png" alt="" {...props} />;
+  return <BrandIcon src="/images/icon-pins.png" {...props} />;
 }
 
 export function ButtonsIcon(props: BrandIconProps) {
-  return <BrandIcon src="/images/icon-buttons.png" alt="" {...props} />;
+  return <BrandIcon src="/images/icon-buttons.png" {...props} />;
 }
 
 export function RulerIcon(props: BrandIconProps) {
-  return <BrandIcon src="/images/icon-ruler.png" alt="" {...props} />;
+  return <BrandIcon src="/images/icon-ruler.png" {...props} />;
 }
 
 export function PincushionIcon(props: BrandIconProps) {
-  return <BrandIcon src="/images/icon-pincushion.png" alt="" {...props} />;
+  return <BrandIcon src="/images/icon-pincushion.png" {...props} />;
 }
 
 export function NeedlesIcon(props: BrandIconProps) {
-  return <BrandIcon src="/images/icon-needles.png" alt="" {...props} />;
+  return <BrandIcon src="/images/icon-needles.png" {...props} />;
 }
 
 export function SnipsIcon(props: BrandIconProps) {
-  return <BrandIcon src="/images/icon-snips.png" alt="" {...props} />;
+  return <BrandIcon src="/images/icon-snips.png" {...props} />;
 }
 
 export function MeasuringTapeIcon(props: BrandIconProps) {
-  return <BrandIcon src="/images/icon-measuring-tape.png" alt="" {...props} />;
+  return <BrandIcon src="/images/icon-measuring-tape.png" {...props} />;
 }
 
 export function NeedleThreadIcon(props: BrandIconProps) {
-  return <BrandIcon src="/images/icon-needle-thread.png" alt="" {...props} />;
+  return <BrandIcon src="/images/icon-needle-thread.png" {...props} />;
 }
 
 export function SafetyPinsIcon(props: BrandIconProps) {
-  return <BrandIcon src="/images/icon-safety-pins.png" alt="" {...props} />;
+  return <BrandIcon src="/images/icon-safety-pins.png" {...props} />;
 }
 
 export function SewingMachineIcon(props: BrandIconProps) {
-  return <BrandIcon src="/images/icon-sewing-machine.png" alt="" {...props} />;
+  return <BrandIcon src="/images/icon-sewing-machine.png" {...props} />;
 }
