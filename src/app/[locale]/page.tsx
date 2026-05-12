@@ -20,8 +20,8 @@ export default async function HomePage({
     <>
       <GrandOpeningBanner />
       <HeroSection />
-      <AboutSection />
       <OpeningHours />
+      <AboutSection />
       <GallerySection />
       <ContactSection />
       <SocialButtons />

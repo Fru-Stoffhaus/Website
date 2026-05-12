@@ -1,12 +1,25 @@
 import { useTranslations } from "next-intl";
 import { STORE_INFO } from "@/lib/constants";
+import { NeedlesIcon, PinsIcon } from "@/components/ui/CraftIcons";
+import { ZigzagLine, DottedLine } from "@/components/ui/DecorativePatterns";
 
 export default function SocialButtons() {
   const t = useTranslations("Social");
 
   return (
-    <section className="py-16 sm:py-24">
-      <div className="max-w-3xl mx-auto px-4 sm:px-6 text-center">
+    <section className="relative py-16 sm:py-24 overflow-hidden">
+      <DottedLine className="absolute top-0 left-[10%] w-[80%] h-2 text-fru-purple/20" />
+
+      <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute top-10 left-[6%] w-24 h-24 rotate-[20deg] opacity-20 hidden sm:block">
+          <NeedlesIcon dark />
+        </div>
+        <div className="absolute bottom-10 right-[6%] w-20 h-20 rotate-[-15deg] opacity-20 hidden sm:block">
+          <PinsIcon dark />
+        </div>
+      </div>
+
+      <div className="relative max-w-3xl mx-auto px-4 sm:px-6 text-center">
         <h2 className="font-heading text-3xl sm:text-4xl font-bold text-fru-dark mb-8">
           {t("title")}
         </h2>
@@ -36,6 +49,8 @@ export default function SocialButtons() {
             {t("instagram")}
           </a>
         </div>
+
+        <ZigzagLine className="w-48 h-4 text-fru-purple/25 mx-auto mt-10" />
       </div>
     </section>
   );

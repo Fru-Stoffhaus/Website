@@ -1,14 +1,28 @@
 import { useTranslations } from "next-intl";
+import { SewingMachineIcon, MeasuringTapeIcon } from "@/components/ui/CraftIcons";
+import { ZigzagLine, DottedLine } from "@/components/ui/DecorativePatterns";
 
 export default function OpeningHours() {
   const t = useTranslations("Hours");
 
   return (
-    <section className="py-16 sm:py-24 bg-fru-green text-white">
-      <div className="max-w-3xl mx-auto px-4 sm:px-6">
-        <h2 className="font-heading text-3xl sm:text-4xl font-bold text-center mb-10">
+    <section className="relative py-16 sm:py-24 bg-fru-green text-white overflow-hidden">
+      <ZigzagLine className="absolute top-0 left-0 w-full h-5 text-white/15" />
+
+      <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute top-12 right-[5%] w-36 h-36 rotate-[10deg] opacity-25 hidden sm:block">
+          <SewingMachineIcon />
+        </div>
+        <div className="absolute bottom-12 left-[4%] w-32 h-32 rotate-[-10deg] opacity-25 hidden sm:block">
+          <MeasuringTapeIcon />
+        </div>
+      </div>
+
+      <div className="relative max-w-3xl mx-auto px-4 sm:px-6">
+        <h2 className="font-heading text-3xl sm:text-4xl font-bold text-center mb-2">
           {t("title")}
         </h2>
+        <DottedLine className="w-48 h-2 text-white/30 mx-auto mb-10" />
 
         <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 sm:p-10">
           <div className="space-y-4">
@@ -41,6 +55,8 @@ export default function OpeningHours() {
           </div>
         </div>
       </div>
+
+      <ZigzagLine className="absolute bottom-0 left-0 w-full h-5 text-white/15" />
     </section>
   );
 }
