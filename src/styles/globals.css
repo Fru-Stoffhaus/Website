@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@theme {
+  --color-fru-peach: #ffab6d;
+  --color-fru-peach-light: #fff0e0;
+  --color-fru-purple: #74257e;
+  --color-fru-purple-light: #9b4ba5;
+  --color-fru-green: #335640;
+  --color-fru-green-light: #4a7a5c;
+  --color-fru-dark: #2a2735;
+  --color-fru-white: #fdfaf5;
+
+  --font-heading: "Jost", "Futura", "Trebuchet MS", "Arial", sans-serif;
+  --font-body: "Inter", "Helvetica Neue", "Arial", sans-serif;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-fru-dark);
+  background-color: var(--color-fru-white);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+}

@@ -1,0 +1,77 @@
+{
+  "Metadata": {
+    "title": "Stoffhaus FRU – Stoffe, Nähzubehör & Kreativität in Wiener Neustadt",
+    "description": "Ihr Fachgeschäft für Stoffe, Nähzubehör und kreative Materialien in Wiener Neustadt."
+  },
+  "Navigation": {
+    "home": "Startseite",
+    "impressum": "Impressum",
+    "datenschutz": "Datenschutz"
+  },
+  "LanguageSwitcher": {
+    "switchTo": "English",
+    "current": "DE"
+  },
+  "GrandOpening": {
+    "title": "Neueröffnung Ende Mai!",
+    "subtitle": "Wir freuen uns, Sie bald in unserem neuen Geschäft begrüßen zu dürfen."
+  },
+  "Hero": {
+    "tagline": "STOFFE · NÄHZUBEHÖR · KREATIVITÄT",
+    "welcome": "Willkommen bei Stoffhaus FRU",
+    "subtitle": "Ihr neues Fachgeschäft für Stoffe und Nähzubehör in Wiener Neustadt"
+  },
+  "About": {
+    "title": "Über uns",
+    "text": "Stoffhaus FRU ist Ihr neues Fachgeschäft für hochwertige Stoffe, Nähzubehör und kreative Materialien im Herzen von Wiener Neustadt. Bei uns finden Sie eine sorgfältig ausgewählte Kollektion an Stoffen für jeden Anlass – ob Bekleidung, Heimtextilien oder kreative Projekte. Wir beraten Sie gerne persönlich und helfen Ihnen, das perfekte Material für Ihr nächstes Projekt zu finden."
+  },
+  "Hours": {
+    "title": "Öffnungszeiten",
+    "mondayFriday": "Montag – Freitag",
+    "saturday": "Samstag",
+    "sunday": "Sonntag & Feiertage",
+    "closed": "Geschlossen",
+    "lunchBreak": "Mittagspause: 11:00 – 12:00",
+    "morningHours": "8:00 – 11:00",
+    "afternoonHours": "12:00 – 18:00",
+    "saturdayHours": "9:00 – 14:00"
+  },
+  "Contact": {
+    "title": "Kontakt & Anfahrt",
+    "address": "Allerheiligengasse 12, 2700 Wiener Neustadt",
+    "email": "info@stoffhaus-fru.at",
+    "phone": "+43 XXX XXXXXXX",
+    "loadMap": "Karte laden",
+    "mapNotice": "Mit dem Laden der Karte werden Daten an Google übermittelt."
+  },
+  "Gallery": {
+    "title": "Einblicke",
+    "comingSoon": "Fotos folgen nach der Eröffnung"
+  },
+  "Social": {
+    "title": "Folgen Sie uns",
+    "facebook": "Facebook",
+    "instagram": "Instagram"
+  },
+  "Footer": {
+    "rights": "© {year} FRU e.U. Alle Rechte vorbehalten.",
+    "impressum": "Impressum",
+    "datenschutz": "Datenschutz"
+  },
+  "CookieConsent": {
+    "message": "Diese Website verwendet nur technisch notwendige Cookies. Es werden keine Tracking- oder Analyse-Cookies eingesetzt.",
+    "accept": "Verstanden",
+    "learnMore": "Mehr erfahren"
+  },
+  "NotFound": {
+    "title": "Seite nicht gefunden",
+    "description": "Die angeforderte Seite existiert leider nicht.",
+    "backHome": "Zurück zur Startseite"
+  },
+  "Impressum": {
+    "title": "Impressum"
+  },
+  "Datenschutz": {
+    "title": "Datenschutzerklärung"
+  }
+}

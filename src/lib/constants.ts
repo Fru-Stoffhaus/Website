@@ -1,0 +1,30 @@
+export const STORE_INFO = {
+  name: "Stoffhaus FRU",
+  legalName: "FRU e.U.",
+  owner: "Fruzsina Tóth",
+  uid: "ATU83216538",
+  address: {
+    street: "Allerheiligengasse 12",
+    postalCode: "2700",
+    city: "Wiener Neustadt",
+    country: "Österreich",
+    countryCode: "AT",
+  },
+  contact: {
+    email: "info@stoffhaus-fru.at",
+    phone: "+43 XXX XXXXXXX",
+  },
+  social: {
+    facebook: "https://www.facebook.com/share/18u5oFdvcs/",
+    instagram: "https://www.instagram.com/stoffhaus_fru",
+  },
+  hours: {
+    weekday: { morning: "8:00 – 11:00", afternoon: "12:00 – 18:00" },
+    saturday: "9:00 – 14:00",
+  },
+  coordinates: {
+    lat: 47.812,
+    lng: 16.243,
+  },
+  tagline: "STOFFE · NÄHZUBEHÖR · KREATIVITÄT",
+} as const;

@@ -1,0 +1,77 @@
+{
+  "Metadata": {
+    "title": "Stoffhaus FRU – Fabrics, Sewing Supplies & Creativity in Wiener Neustadt",
+    "description": "Your specialty store for fabrics, sewing supplies, and creative materials in Wiener Neustadt, Austria."
+  },
+  "Navigation": {
+    "home": "Home",
+    "impressum": "Legal Notice",
+    "datenschutz": "Privacy Policy"
+  },
+  "LanguageSwitcher": {
+    "switchTo": "Deutsch",
+    "current": "EN"
+  },
+  "GrandOpening": {
+    "title": "Grand Opening End of May!",
+    "subtitle": "We look forward to welcoming you to our new store soon."
+  },
+  "Hero": {
+    "tagline": "FABRICS · SEWING SUPPLIES · CREATIVITY",
+    "welcome": "Welcome to Stoffhaus FRU",
+    "subtitle": "Your new specialty store for fabrics and sewing supplies in Wiener Neustadt"
+  },
+  "About": {
+    "title": "About Us",
+    "text": "Stoffhaus FRU is your new specialty store for high-quality fabrics, sewing supplies, and creative materials in the heart of Wiener Neustadt. We offer a carefully curated collection of fabrics for every occasion – whether clothing, home textiles, or creative projects. We are happy to provide personal advice and help you find the perfect material for your next project."
+  },
+  "Hours": {
+    "title": "Opening Hours",
+    "mondayFriday": "Monday – Friday",
+    "saturday": "Saturday",
+    "sunday": "Sundays & Holidays",
+    "closed": "Closed",
+    "lunchBreak": "Lunch break: 11:00 – 12:00",
+    "morningHours": "8:00 – 11:00",
+    "afternoonHours": "12:00 – 18:00",
+    "saturdayHours": "9:00 – 14:00"
+  },
+  "Contact": {
+    "title": "Contact & Directions",
+    "address": "Allerheiligengasse 12, 2700 Wiener Neustadt",
+    "email": "info@stoffhaus-fru.at",
+    "phone": "+43 XXX XXXXXXX",
+    "loadMap": "Load Map",
+    "mapNotice": "Loading the map transmits data to Google."
+  },
+  "Gallery": {
+    "title": "Gallery",
+    "comingSoon": "Photos coming after the grand opening"
+  },
+  "Social": {
+    "title": "Follow Us",
+    "facebook": "Facebook",
+    "instagram": "Instagram"
+  },
+  "Footer": {
+    "rights": "© {year} FRU e.U. All rights reserved.",
+    "impressum": "Legal Notice",
+    "datenschutz": "Privacy Policy"
+  },
+  "CookieConsent": {
+    "message": "This website uses only technically necessary cookies. No tracking or analytics cookies are used.",
+    "accept": "Got it",
+    "learnMore": "Learn more"
+  },
+  "NotFound": {
+    "title": "Page Not Found",
+    "description": "The requested page does not exist.",
+    "backHome": "Back to Home"
+  },
+  "Impressum": {
+    "title": "Legal Notice"
+  },
+  "Datenschutz": {
+    "title": "Privacy Policy"
+  }
+}
