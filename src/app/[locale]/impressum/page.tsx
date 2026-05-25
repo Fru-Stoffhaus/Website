@@ -53,6 +53,9 @@ function ImpressumDE() {
       <h2>Unternehmensform</h2>
       <p>Einzelunternehmen (e.U.)</p>
 
+      <h2>Firmenbuchnummer</h2>
+      <p>FN 637754z, Landesgericht Eisenstadt</p>
+
       <h2>UID-Nummer</h2>
       <p>{STORE_INFO.uid}</p>
 
@@ -198,6 +201,9 @@ function ImpressumEN() {
 
       <h2>Legal Form</h2>
       <p>Sole proprietorship (Einzelunternehmen, e.U.)</p>
+
+      <h2>Commercial Register</h2>
+      <p>FN 637754z, Regional Court Eisenstadt (Landesgericht Eisenstadt)</p>
 
       <h2>VAT ID</h2>
       <p>{STORE_INFO.uid}</p>
