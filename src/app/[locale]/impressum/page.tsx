@@ -119,14 +119,54 @@ function ImpressumDE() {
         E-Mail-Adresse richten.
       </p>
 
+      <h2>Geltungsbereich</h2>
+      <p>
+        Dieses Impressum gilt auch für folgende Social-Media-Auftritte:
+      </p>
+      <ul>
+        <li>
+          Facebook:{" "}
+          <a
+            href={STORE_INFO.social.facebook}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {STORE_INFO.name} auf Facebook
+          </a>
+        </li>
+        <li>
+          Instagram:{" "}
+          <a
+            href={STORE_INFO.social.instagram}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            @stoffhaus_fru
+          </a>
+        </li>
+      </ul>
+
+      <h2>Urheberrecht / Bildrechte</h2>
+      <p>
+        Alle auf dieser Website veröffentlichten Inhalte (Texte, Bilder,
+        Grafiken, Logos) unterliegen dem Urheberrecht der Betreiberin, soweit
+        nicht Urheberrechte Dritter bestehen. Die Verwendung, Vervielfältigung
+        oder Verbreitung von Inhalten dieser Website bedarf der ausdrücklichen
+        schriftlichen Zustimmung der Betreiberin.
+      </p>
+      <p>
+        Fotos auf dieser Website wurden von der Betreiberin erstellt oder mit
+        Genehmigung der Rechteinhaber verwendet. Sollten Sie eine
+        Urheberrechtsverletzung bemerken, bitten wir um einen entsprechenden
+        Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir
+        betroffene Inhalte umgehend entfernen.
+      </p>
+
       <h2>Haftungsausschluss</h2>
       <p>
         Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine Haftung
         für die Inhalte externer Links. Für den Inhalt der verlinkten Seiten
-        sind ausschließlich deren Betreiber verantwortlich. Alle Texte, Bilder
-        und weitere auf der Internetseite veröffentlichten Informationen
-        unterliegen dem Urheberrecht der Betreiberin, soweit nicht Urheberrechte
-        Dritter bestehen.
+        sind ausschließlich deren Betreiber verantwortlich.
       </p>
     </article>
   );
@@ -213,13 +253,52 @@ function ImpressumEN() {
         above.
       </p>
 
+      <h2>Scope</h2>
+      <p>
+        This legal notice also applies to the following social media profiles:
+      </p>
+      <ul>
+        <li>
+          Facebook:{" "}
+          <a
+            href={STORE_INFO.social.facebook}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {STORE_INFO.name} on Facebook
+          </a>
+        </li>
+        <li>
+          Instagram:{" "}
+          <a
+            href={STORE_INFO.social.instagram}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            @stoffhaus_fru
+          </a>
+        </li>
+      </ul>
+
+      <h2>Copyright / Image Rights</h2>
+      <p>
+        All content published on this website (texts, images, graphics, logos)
+        is subject to the copyright of the operator, unless third-party
+        copyrights apply. Any use, reproduction, or distribution of content
+        from this website requires the express written consent of the operator.
+      </p>
+      <p>
+        Photos on this website were taken by the operator or used with
+        permission of the respective rights holders. If you notice a copyright
+        infringement, please notify us accordingly. Upon becoming aware of any
+        legal violations, we will remove the affected content immediately.
+      </p>
+
       <h2>Disclaimer</h2>
       <p>
         Despite careful content review, we assume no liability for the content
         of external links. The operators of linked pages are solely responsible
-        for their content. All texts, images, and other information published on
-        this website are subject to the copyright of the operator, unless
-        third-party copyrights apply.
+        for their content.
       </p>
     </article>
   );

@@ -11,7 +11,7 @@ export const STORE_INFO = {
     countryCode: "AT",
   },
   contact: {
-    email: "info@stoffhaus-fru.at",
+    email: "info@fru.co.at",
     phone: "+43 660 5534141",
   },
   social: {

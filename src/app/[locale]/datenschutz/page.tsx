@@ -111,7 +111,23 @@ function DatenschutzDE() {
         besuchen.
       </p>
 
-      <h2>6. Hosting</h2>
+      <h2>6. Fotos und Bildmaterial</h2>
+      <p>
+        Auf dieser Website werden Fotos unseres Geschäfts, unserer Produkte
+        und gegebenenfalls von Veranstaltungen veröffentlicht. Sofern Personen
+        auf Fotos erkennbar sind, erfolgt die Veröffentlichung nur mit deren
+        ausdrücklicher Einwilligung (Art. 6 Abs. 1 lit. a DSGVO). Betroffene
+        Personen können ihre Einwilligung jederzeit widerrufen – in diesem
+        Fall werden die betreffenden Fotos umgehend entfernt.
+      </p>
+      <p>
+        Zur Ausübung Ihres Widerrufsrechts wenden Sie sich bitte an:{" "}
+        <a href={`mailto:${STORE_INFO.contact.email}`}>
+          {STORE_INFO.contact.email}
+        </a>
+      </p>
+
+      <h2>7. Hosting</h2>
       <p>
         Diese Website wird bei Vercel Inc. (San Francisco, USA) gehostet. Beim
         Besuch unserer Website werden Ihre personenbezogenen Daten (z. B.
@@ -123,7 +139,7 @@ function DatenschutzDE() {
         Framework. Vercel ist unter dem Data Privacy Framework zertifiziert.
       </p>
 
-      <h2>7. Ihre Rechte</h2>
+      <h2>8. Ihre Rechte</h2>
       <p>
         Sie haben gegenüber uns folgende Rechte hinsichtlich Ihrer
         personenbezogenen Daten:
@@ -143,7 +159,7 @@ function DatenschutzDE() {
         </a>
       </p>
 
-      <h2>8. Beschwerderecht</h2>
+      <h2>9. Beschwerderecht</h2>
       <p>
         Sie haben das Recht, sich bei der zuständigen Aufsichtsbehörde zu
         beschweren:
@@ -164,7 +180,7 @@ function DatenschutzDE() {
         </a>
       </p>
 
-      <h2>9. Speicherdauer</h2>
+      <h2>10. Speicherdauer</h2>
       <p>
         Server-Logfiles werden nach maximal 30 Tagen gelöscht. Der Cookie zur
         Spracheinstellung wird nur für die Dauer der Browser-Sitzung
@@ -261,7 +277,22 @@ function DatenschutzEN() {
         respective platform.
       </p>
 
-      <h2>6. Hosting</h2>
+      <h2>6. Photos and Images</h2>
+      <p>
+        This website publishes photos of our store, our products, and
+        occasionally events. If individuals are recognizable in photos,
+        publication only occurs with their express consent (Art. 6(1)(a) GDPR).
+        Individuals may withdraw their consent at any time – in which case the
+        respective photos will be removed promptly.
+      </p>
+      <p>
+        To exercise your right of withdrawal, please contact:{" "}
+        <a href={`mailto:${STORE_INFO.contact.email}`}>
+          {STORE_INFO.contact.email}
+        </a>
+      </p>
+
+      <h2>7. Hosting</h2>
       <p>
         This website is hosted by Vercel Inc. (San Francisco, USA). When
         visiting our website, your personal data (e.g., IP address) is processed
@@ -273,7 +304,7 @@ function DatenschutzEN() {
         Framework. Vercel is certified under the Data Privacy Framework.
       </p>
 
-      <h2>7. Your Rights</h2>
+      <h2>8. Your Rights</h2>
       <p>
         You have the following rights regarding your personal data:
       </p>
@@ -292,7 +323,7 @@ function DatenschutzEN() {
         </a>
       </p>
 
-      <h2>8. Right to Lodge a Complaint</h2>
+      <h2>9. Right to Lodge a Complaint</h2>
       <p>
         You have the right to lodge a complaint with the competent supervisory
         authority:
@@ -313,7 +344,7 @@ function DatenschutzEN() {
         </a>
       </p>
 
-      <h2>9. Data Retention</h2>
+      <h2>10. Data Retention</h2>
       <p>
         Server log files are deleted after a maximum of 30 days. The language
         preference cookie is stored only for the duration of the browser session.
