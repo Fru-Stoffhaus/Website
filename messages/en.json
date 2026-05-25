@@ -5,6 +5,10 @@
   },
   "Navigation": {
     "home": "Home",
+    "hours": "Opening Hours",
+    "contact": "Contact",
+    "about": "About Us",
+    "gallery": "Gallery",
     "impressum": "Legal Notice",
     "datenschutz": "Privacy Policy"
   },
@@ -18,7 +22,7 @@
   },
   "Hero": {
     "tagline": "FABRICS · SEWING SUPPLIES · CREATIVITY",
-    "welcome": "Welcome to Stoffhaus FRU",
+    "welcome": "Welcome to Stoffhaus",
     "subtitle": "Your new specialty store for fabrics and sewing supplies in Wiener Neustadt"
   },
   "About": {
@@ -32,15 +36,15 @@
     "sunday": "Sundays & Holidays",
     "closed": "Closed",
     "lunchBreak": "Lunch break: 11:00 – 12:00",
-    "morningHours": "8:00 – 11:00",
-    "afternoonHours": "12:00 – 18:00",
+    "morningHours": "9:00 – 11:00",
+    "afternoonHours": "12:00 – 17:00",
     "saturdayHours": "9:00 – 14:00"
   },
   "Contact": {
     "title": "Contact & Directions",
     "address": "Allerheiligengasse 12, 2700 Wiener Neustadt",
     "email": "info@stoffhaus-fru.at",
-    "phone": "+43 XXX XXXXXXX",
+    "phone": "+43 660 5534141",
     "loadMap": "Load Map",
     "mapNotice": "Loading the map transmits data to Google."
   },

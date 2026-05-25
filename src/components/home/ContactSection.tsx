@@ -13,7 +13,7 @@ export default function ContactSection() {
   );
 
   return (
-    <section className="py-16 sm:py-24 bg-fru-peach-light">
+    <section id="contact" className="py-16 sm:py-24 bg-fru-peach-light">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <h2 className="font-heading text-3xl sm:text-4xl font-bold text-center text-fru-dark mb-10">
           {t("title")}

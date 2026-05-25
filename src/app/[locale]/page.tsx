@@ -21,9 +21,9 @@ export default async function HomePage({
       <GrandOpeningBanner />
       <HeroSection />
       <OpeningHours />
+      <ContactSection />
       <AboutSection />
       <GallerySection />
-      <ContactSection />
       <SocialButtons />
       <LocalBusinessJsonLd />
     </>

@@ -13,9 +13,9 @@ export default function Footer() {
             <h3 className="font-heading text-xl font-bold mb-3">
               <span className="text-fru-green-light">Stoff</span>
               <span className="text-fru-green-light">haus</span>{" "}
-              <span className="text-fru-green-light">F</span>
-              <span className="text-fru-purple-light">R</span>
-              <span className="text-fru-peach">U</span>
+              <span className="font-lot text-fru-purple-light">F</span>
+              <span className="font-lot text-fru-green-light">R</span>
+              <span className="font-lot text-fru-peach">U</span>
             </h3>
             <p className="text-sm text-white/70">
               {STORE_INFO.address.street}

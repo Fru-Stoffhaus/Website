@@ -31,7 +31,7 @@ export default function LocalBusinessJsonLd() {
           "Thursday",
           "Friday",
         ],
-        opens: "08:00",
+        opens: "09:00",
         closes: "11:00",
       },
       {
@@ -44,7 +44,7 @@ export default function LocalBusinessJsonLd() {
           "Friday",
         ],
         opens: "12:00",
-        closes: "18:00",
+        closes: "17:00",
       },
       {
         "@type": "OpeningHoursSpecification",

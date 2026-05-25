@@ -5,6 +5,10 @@
   },
   "Navigation": {
     "home": "Startseite",
+    "hours": "Öffnungszeiten",
+    "contact": "Kontakt",
+    "about": "Über uns",
+    "gallery": "Einblicke",
     "impressum": "Impressum",
     "datenschutz": "Datenschutz"
   },
@@ -18,7 +22,7 @@
   },
   "Hero": {
     "tagline": "STOFFE · NÄHZUBEHÖR · KREATIVITÄT",
-    "welcome": "Willkommen bei Stoffhaus FRU",
+    "welcome": "Willkommen bei Stoffhaus",
     "subtitle": "Ihr neues Fachgeschäft für Stoffe und Nähzubehör in Wiener Neustadt"
   },
   "About": {
@@ -32,15 +36,15 @@
     "sunday": "Sonntag & Feiertage",
     "closed": "Geschlossen",
     "lunchBreak": "Mittagspause: 11:00 – 12:00",
-    "morningHours": "8:00 – 11:00",
-    "afternoonHours": "12:00 – 18:00",
+    "morningHours": "9:00 – 11:00",
+    "afternoonHours": "12:00 – 17:00",
     "saturdayHours": "9:00 – 14:00"
   },
   "Contact": {
     "title": "Kontakt & Anfahrt",
     "address": "Allerheiligengasse 12, 2700 Wiener Neustadt",
     "email": "info@stoffhaus-fru.at",
-    "phone": "+43 XXX XXXXXXX",
+    "phone": "+43 660 5534141",
     "loadMap": "Karte laden",
     "mapNotice": "Mit dem Laden der Karte werden Daten an Google übermittelt."
   },

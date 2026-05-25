@@ -32,7 +32,10 @@ export default function HeroSection() {
               {t("tagline")}
             </p>
             <h1 className="font-heading text-4xl sm:text-5xl md:text-6xl font-bold text-fru-dark mb-6">
-              {t("welcome")}
+              {t("welcome")}{" "}
+              <span className="font-lot text-fru-dark">F</span>
+              <span className="font-lot text-fru-dark">R</span>
+              <span className="font-lot text-fru-dark">U</span>
             </h1>
             <p className="text-lg sm:text-xl text-fru-dark/80 max-w-xl">
               {t("subtitle")}

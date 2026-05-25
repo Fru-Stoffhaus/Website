@@ -14,7 +14,7 @@ export default function GallerySection() {
   const t = useTranslations("Gallery");
 
   return (
-    <section className="relative py-16 sm:py-24">
+    <section id="gallery" className="relative py-16 sm:py-24">
       <WavyLine className="absolute top-0 left-0 w-full h-4 text-fru-peach/30" />
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6">

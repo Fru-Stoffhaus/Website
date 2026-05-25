@@ -12,14 +12,14 @@ export const STORE_INFO = {
   },
   contact: {
     email: "info@stoffhaus-fru.at",
-    phone: "+43 XXX XXXXXXX",
+    phone: "+43 660 5534141",
   },
   social: {
     facebook: "https://www.facebook.com/share/18u5oFdvcs/",
     instagram: "https://www.instagram.com/stoffhaus_fru",
   },
   hours: {
-    weekday: { morning: "8:00 – 11:00", afternoon: "12:00 – 18:00" },
+    weekday: { morning: "9:00 – 11:00", afternoon: "12:00 – 17:00" },
     saturday: "9:00 – 14:00",
   },
   coordinates: {

@@ -1,6 +1,15 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: "LOT";
+  src: url("/fonts/LOT.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 @theme {
+  --font-lot: "LOT", "Jost", sans-serif;
   --color-fru-peach: #ffab6d;
   --color-fru-peach-light: #fff0e0;
   --color-fru-purple: #74257e;
@@ -18,6 +27,11 @@ body {
   font-family: var(--font-body);
   color: var(--color-fru-dark);
   background-color: var(--color-fru-white);
+  scroll-behavior: smooth;
+}
+
+[id] {
+  scroll-margin-top: 5rem;
 }
 
 h1,

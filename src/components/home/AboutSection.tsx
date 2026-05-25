@@ -6,7 +6,7 @@ export default function AboutSection() {
   const t = useTranslations("About");
 
   return (
-    <section className="relative py-16 sm:py-24 overflow-hidden">
+    <section id="about" className="relative py-16 sm:py-24 overflow-hidden">
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-8 left-[3%] w-28 h-28 rotate-[15deg] opacity-25 hidden md:block">
           <PincushionIcon dark />

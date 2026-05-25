@@ -6,7 +6,7 @@ export default function OpeningHours() {
   const t = useTranslations("Hours");
 
   return (
-    <section className="relative py-16 sm:py-24 bg-fru-green text-white overflow-hidden">
+    <section id="hours" className="relative py-16 sm:py-24 bg-fru-green text-white overflow-hidden">
       <ZigzagLine className="absolute top-0 left-0 w-full h-5 text-white/15" />
 
       <div className="absolute inset-0 pointer-events-none">
