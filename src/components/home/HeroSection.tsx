@@ -45,8 +45,8 @@ export default function HeroSection() {
 
           <div className="flex-shrink-0">
             <Image
-              src="/images/fru-brand.png"
-              alt="Stoffhaus FRU – Stoffe, Nähzubehör, Kreativität"
+              src="/images/fru-opening.jpg"
+              alt="Stoffhaus FRU – Eröffnung am 5. Juni, 10% Willkommensrabatt"
               width={400}
               height={500}
               className="rounded-2xl shadow-xl"
