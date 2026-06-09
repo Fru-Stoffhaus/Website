@@ -1,3 +1,6 @@
+export const SITE_URL =
+  process.env.NEXT_PUBLIC_SITE_URL || "https://fru.co.at";
+
 export const STORE_INFO = {
   name: "Stoffhaus FRU",
   legalName: "FRU e.U.",
@@ -7,6 +10,7 @@ export const STORE_INFO = {
     street: "Allerheiligengasse 12",
     postalCode: "2700",
     city: "Wiener Neustadt",
+    region: "Niederösterreich",
     country: "Österreich",
     countryCode: "AT",
   },

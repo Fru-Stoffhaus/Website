@@ -4,6 +4,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Jost, Inter } from "next/font/google";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
+import { SITE_URL } from "@/lib/constants";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import CookieConsent from "@/components/ui/CookieConsent";
@@ -34,11 +35,23 @@ export async function generateMetadata({
   const t = await getTranslations({ locale, namespace: "Metadata" });
 
   return {
+    metadataBase: new URL(SITE_URL),
     title: t("title"),
     description: t("description"),
+    keywords: t("keywords"),
+    alternates: {
+      canonical: `/${locale}`,
+      languages: {
+        de: "/de",
+        en: "/en",
+        "x-default": "/de",
+      },
+    },
     openGraph: {
       title: t("title"),
       description: t("description"),
+      url: `${SITE_URL}/${locale}`,
+      siteName: "Stoffhaus FRU",
       locale: locale === "de" ? "de_AT" : "en_US",
       type: "website",
     },

@@ -1,21 +1,32 @@
-import { STORE_INFO } from "@/lib/constants";
+import { STORE_INFO, SITE_URL } from "@/lib/constants";
 
 export default function LocalBusinessJsonLd() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Store",
+    "@id": `${SITE_URL}/#store`,
     name: STORE_INFO.name,
     description:
-      "Fachgeschäft für Stoffe, Nähzubehör und kreative Materialien in Wiener Neustadt",
+      "Stoffgeschäft für hochwertige Stoffe, Nähzubehör und kreative Materialien in Wiener Neustadt, Niederösterreich",
+    url: SITE_URL,
+    keywords:
+      "Stoffe, Stoffgeschäft, Nähzubehör, Stoffe kaufen, Meterware, Wiener Neustadt, Niederösterreich",
     telephone: STORE_INFO.contact.phone,
     email: STORE_INFO.contact.email,
+    priceRange: "€€",
+    currenciesAccepted: "EUR",
     address: {
       "@type": "PostalAddress",
       streetAddress: STORE_INFO.address.street,
       addressLocality: STORE_INFO.address.city,
+      addressRegion: STORE_INFO.address.region,
       postalCode: STORE_INFO.address.postalCode,
       addressCountry: STORE_INFO.address.countryCode,
     },
+    areaServed: [
+      { "@type": "City", name: "Wiener Neustadt" },
+      { "@type": "AdministrativeArea", name: "Niederösterreich" },
+    ],
     geo: {
       "@type": "GeoCoordinates",
       latitude: STORE_INFO.coordinates.lat,

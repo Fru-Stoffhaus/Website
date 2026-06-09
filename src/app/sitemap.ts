@@ -1,6 +1,5 @@
 import type { MetadataRoute } from "next";
-
-const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://stoffhaus-fru.vercel.app";
+import { SITE_URL as baseUrl } from "@/lib/constants";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const locales = ["de", "en"];
