@@ -13,6 +13,8 @@ const photos = [
   { src: "/images/gallery-scissors.jpg", alt: "Auswahl an Scheren und Schneiderscheren als Nähzubehör" },
   { src: "/images/gallery-shop-notions.jpg", alt: "Bänder, Kurzwaren und Nähzubehör im Geschäft" },
   { src: "/images/gallery-interfacing.jpg", alt: "Vlieseline und Einlagen auf Meterware" },
+  { src: "/images/gallery-shop-threads.jpg", alt: "Garn-Display mit Trojalock- und Mettler-Nähgarnen in vielen Farben im Stoffhaus FRU" },
+  { src: "/images/gallery-shop-patterns.jpg", alt: "Burda-Schnittmuster und Nähzeitschriften im Stoffhaus FRU" },
 ];
 
 export default function GallerySection() {

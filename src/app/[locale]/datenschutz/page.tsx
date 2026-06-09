@@ -127,7 +127,55 @@ function DatenschutzDE() {
         </a>
       </p>
 
-      <h2>7. Hosting</h2>
+      <h2>7. Videoüberwachung</h2>
+      <p>
+        Zum Schutz von Personen, Eigentum sowie zur Verhinderung und Aufklärung
+        von Diebstählen und Sachbeschädigungen werden Teile unserer
+        Geschäftsräume in {STORE_INFO.address.street},{" "}
+        {STORE_INFO.address.postalCode} {STORE_INFO.address.city}{" "}
+        videoüberwacht. Auf die Videoüberwachung wird durch deutlich sichtbare
+        Hinweisschilder am Eingang aufmerksam gemacht.
+      </p>
+      <p>
+        <strong>Verantwortlicher:</strong> {STORE_INFO.legalName},{" "}
+        {STORE_INFO.owner}, {STORE_INFO.address.street},{" "}
+        {STORE_INFO.address.postalCode} {STORE_INFO.address.city} (siehe auch
+        Punkt 1).
+      </p>
+      <p>
+        <strong>Zweck der Verarbeitung:</strong> Schutz von Personen und
+        Eigentum, Prävention und Aufklärung von Diebstählen, Einbrüchen,
+        Vandalismus und sonstigen sicherheitsrelevanten Vorfällen.
+      </p>
+      <p>
+        <strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. f DSGVO
+        (berechtigtes Interesse).
+      </p>
+      <p>
+        <strong>Berechtigtes Interesse:</strong> Gewährleistung der Sicherheit
+        von Kundinnen und Kunden, Mitarbeitenden und Unternehmenswerten sowie
+        die Beweissicherung im Anlassfall.
+      </p>
+      <p>
+        <strong>Speicherdauer:</strong> Die Videoaufzeichnungen werden
+        grundsätzlich für maximal 72 Stunden gespeichert und anschließend
+        automatisch gelöscht, sofern keine Aufbewahrung zur Beweissicherung
+        erforderlich ist.
+      </p>
+      <p>
+        <strong>Empfänger der Daten:</strong> Eine Weitergabe erfolgt nur,
+        soweit dies gesetzlich erforderlich ist oder zur Durchsetzung bzw.
+        Abwehr von Rechtsansprüchen notwendig ist. Empfänger können
+        insbesondere Behörden, Gerichte, Versicherungen oder Rechtsvertreter
+        sein.
+      </p>
+      <p>
+        Ihre Rechte als betroffene Person sowie Ihr Beschwerderecht bei der
+        Datenschutzbehörde gelten auch für die Videoüberwachung – siehe Punkt 9
+        und Punkt 10.
+      </p>
+
+      <h2>8. Hosting</h2>
       <p>
         Diese Website wird bei Vercel Inc. (San Francisco, USA) gehostet. Beim
         Besuch unserer Website werden Ihre personenbezogenen Daten (z. B.
@@ -139,7 +187,7 @@ function DatenschutzDE() {
         Framework. Vercel ist unter dem Data Privacy Framework zertifiziert.
       </p>
 
-      <h2>8. Ihre Rechte</h2>
+      <h2>9. Ihre Rechte</h2>
       <p>
         Sie haben gegenüber uns folgende Rechte hinsichtlich Ihrer
         personenbezogenen Daten:
@@ -159,7 +207,7 @@ function DatenschutzDE() {
         </a>
       </p>
 
-      <h2>9. Beschwerderecht</h2>
+      <h2>10. Beschwerderecht</h2>
       <p>
         Sie haben das Recht, sich bei der zuständigen Aufsichtsbehörde zu
         beschweren:
@@ -180,7 +228,7 @@ function DatenschutzDE() {
         </a>
       </p>
 
-      <h2>10. Speicherdauer</h2>
+      <h2>11. Speicherdauer</h2>
       <p>
         Server-Logfiles werden nach maximal 30 Tagen gelöscht. Der Cookie zur
         Spracheinstellung wird nur für die Dauer der Browser-Sitzung
@@ -188,7 +236,7 @@ function DatenschutzDE() {
       </p>
 
       <p className="text-sm text-fru-dark/50 mt-12">
-        Stand: Mai 2026
+        Stand: Juni 2026
       </p>
     </article>
   );
@@ -292,7 +340,51 @@ function DatenschutzEN() {
         </a>
       </p>
 
-      <h2>7. Hosting</h2>
+      <h2>7. Video Surveillance</h2>
+      <p>
+        To protect persons and property and to prevent and investigate theft and
+        property damage, parts of our business premises at{" "}
+        {STORE_INFO.address.street}, {STORE_INFO.address.postalCode}{" "}
+        {STORE_INFO.address.city} are subject to video surveillance. The
+        surveillance is clearly indicated by visible notices at the entrance.
+      </p>
+      <p>
+        <strong>Controller:</strong> {STORE_INFO.legalName},{" "}
+        {STORE_INFO.owner}, {STORE_INFO.address.street},{" "}
+        {STORE_INFO.address.postalCode} {STORE_INFO.address.city} (see also
+        section 1).
+      </p>
+      <p>
+        <strong>Purpose of processing:</strong> Protection of persons and
+        property; prevention and investigation of theft, burglary, vandalism,
+        and other security-relevant incidents.
+      </p>
+      <p>
+        <strong>Legal basis:</strong> Art. 6(1)(f) GDPR (legitimate interest).
+      </p>
+      <p>
+        <strong>Legitimate interest:</strong> Ensuring the safety of customers,
+        staff, and company assets, as well as preserving evidence in the event
+        of an incident.
+      </p>
+      <p>
+        <strong>Retention period:</strong> Video recordings are generally
+        stored for a maximum of 72 hours and then automatically deleted, unless
+        retention is required to preserve evidence.
+      </p>
+      <p>
+        <strong>Recipients of the data:</strong> Data is only disclosed where
+        legally required or necessary to assert or defend against legal claims.
+        Recipients may in particular include authorities, courts, insurers, or
+        legal representatives.
+      </p>
+      <p>
+        Your rights as a data subject and your right to lodge a complaint with
+        the data protection authority also apply to the video surveillance –
+        see sections 9 and 10.
+      </p>
+
+      <h2>8. Hosting</h2>
       <p>
         This website is hosted by Vercel Inc. (San Francisco, USA). When
         visiting our website, your personal data (e.g., IP address) is processed
@@ -304,7 +396,7 @@ function DatenschutzEN() {
         Framework. Vercel is certified under the Data Privacy Framework.
       </p>
 
-      <h2>8. Your Rights</h2>
+      <h2>9. Your Rights</h2>
       <p>
         You have the following rights regarding your personal data:
       </p>
@@ -323,7 +415,7 @@ function DatenschutzEN() {
         </a>
       </p>
 
-      <h2>9. Right to Lodge a Complaint</h2>
+      <h2>10. Right to Lodge a Complaint</h2>
       <p>
         You have the right to lodge a complaint with the competent supervisory
         authority:
@@ -344,14 +436,14 @@ function DatenschutzEN() {
         </a>
       </p>
 
-      <h2>10. Data Retention</h2>
+      <h2>11. Data Retention</h2>
       <p>
         Server log files are deleted after a maximum of 30 days. The language
         preference cookie is stored only for the duration of the browser session.
       </p>
 
       <p className="text-sm text-fru-dark/50 mt-12">
-        Last updated: May 2026
+        Last updated: June 2026
       </p>
     </article>
   );
