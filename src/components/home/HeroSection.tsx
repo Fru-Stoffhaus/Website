@@ -45,10 +45,10 @@ export default function HeroSection() {
 
           <div className="flex-shrink-0">
             <Image
-              src="/images/fru-opening.jpg"
-              alt="Stoffhaus FRU – Eröffnung am 5. Juni, 10% Willkommensrabatt"
+              src="/images/fru-geoeffnet.jpg"
+              alt="Stoffhaus FRU – Wir haben geöffnet"
               width={400}
-              height={500}
+              height={566}
               className="rounded-2xl shadow-xl"
               priority
             />
