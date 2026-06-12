@@ -1,5 +1,5 @@
 import { setRequestLocale } from "next-intl/server";
-import GrandOpeningBanner from "@/components/ui/GrandOpeningBanner";
+import AnnouncementBanner from "@/components/ui/AnnouncementBanner";
 import HeroSection from "@/components/home/HeroSection";
 import AboutSection from "@/components/home/AboutSection";
 import OpeningHours from "@/components/home/OpeningHours";
@@ -18,7 +18,7 @@ export default async function HomePage({
 
   return (
     <>
-      <GrandOpeningBanner />
+      <AnnouncementBanner />
       <HeroSection />
       <OpeningHours />
       <ContactSection />
