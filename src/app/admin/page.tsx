@@ -1,6 +1,7 @@
 import { isAuthed } from "@/lib/admin-auth";
 import { getBannerFresh } from "@/lib/banner";
-import { login, logout, saveBanner } from "./actions";
+import { getHeroImageFresh } from "@/lib/hero";
+import { login, logout, saveBanner, saveHeroImage } from "./actions";
 
 export const dynamic = "force-dynamic";
 
@@ -19,7 +20,7 @@ export default async function AdminPage({
     return (
       <main className="max-w-sm mx-auto px-4 py-20">
         <h1 className="font-heading text-2xl font-bold text-fru-purple mb-6">
-          Banner verwalten
+          Verwaltung
         </h1>
         {sp.error && (
           <p className="mb-4 rounded-lg bg-red-100 text-red-800 px-3 py-2 text-sm">
@@ -46,12 +47,19 @@ export default async function AdminPage({
   }
 
   const banner = await getBannerFresh();
+  const heroImage = await getHeroImageFresh();
+
+  const errorMessages: Record<string, string> = {
+    image: "Bitte eine Bilddatei auswählen.",
+    imagetype: "Nur JPG-, PNG- oder WebP-Bilder sind erlaubt.",
+    imagesize: "Das Bild ist zu groß (max. 8 MB).",
+  };
 
   return (
     <main className="max-w-2xl mx-auto px-4 py-12">
       <div className="flex items-center justify-between mb-2">
         <h1 className="font-heading text-2xl font-bold text-fru-purple">
-          Banner verwalten
+          Verwaltung
         </h1>
         <form action={logout}>
           <button className="text-sm text-fru-dark/60 hover:text-fru-dark underline">
@@ -59,16 +67,62 @@ export default async function AdminPage({
           </button>
         </form>
       </div>
+
+      {sp.saved && (
+        <p className="mb-6 rounded-lg bg-green-100 text-green-800 px-3 py-2 text-sm">
+          {sp.saved === "image"
+            ? "Bild gespeichert. Die Änderung ist live."
+            : "Gespeichert. Die Änderung ist live."}
+        </p>
+      )}
+      {sp.error && errorMessages[sp.error] && (
+        <p className="mb-6 rounded-lg bg-red-100 text-red-800 px-3 py-2 text-sm">
+          {errorMessages[sp.error]}
+        </p>
+      )}
+
+      {/* Hero image upload */}
+      <section className="mb-12">
+        <h2 className="font-heading text-lg font-semibold text-fru-dark mb-1">
+          Startseiten-Bild
+        </h2>
+        <p className="mb-4 text-sm text-fru-dark/70">
+          Das Bild neben „Willkommen bei FRU“. JPG, PNG oder WebP, max. 8 MB.
+        </p>
+        <div className="flex items-start gap-5">
+          <div className="w-32 flex-shrink-0">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={heroImage}
+              alt="Aktuelles Startseiten-Bild"
+              className="w-full h-auto rounded-lg border border-fru-dark/15"
+            />
+            <p className="mt-1 text-xs text-fru-dark/50 text-center">aktuell</p>
+          </div>
+          <form action={saveHeroImage} className="flex-1 space-y-3">
+            <input
+              type="file"
+              name="image"
+              accept="image/jpeg,image/png,image/webp"
+              required
+              className="block w-full text-sm text-fru-dark/80 file:mr-3 file:rounded-lg file:border-0 file:bg-fru-purple/10 file:px-4 file:py-2 file:text-fru-purple file:font-medium hover:file:bg-fru-purple/20"
+            />
+            <button className="rounded-lg bg-fru-purple text-white font-heading font-semibold px-6 py-2.5 hover:opacity-90 transition">
+              Bild hochladen
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <hr className="mb-10 border-fru-dark/10" />
+
+      <h2 className="font-heading text-lg font-semibold text-fru-dark mb-1">
+        Banner
+      </h2>
       <p className="mb-6 text-sm text-fru-dark/70">
         Text leer lassen = kein Banner. Bei Text erscheint das lila Banner oben
         auf der Seite. Zeilenumbrüche werden übernommen.
       </p>
-
-      {sp.saved && (
-        <p className="mb-6 rounded-lg bg-green-100 text-green-800 px-3 py-2 text-sm">
-          Gespeichert. Die Änderung ist live.
-        </p>
-      )}
 
       <form action={saveBanner} className="space-y-6">
         <label className="block">

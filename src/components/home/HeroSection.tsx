@@ -1,10 +1,12 @@
 import Image from "next/image";
-import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 import { SnipsIcon, FabricIcon, NeedleThreadIcon, ButtonsIcon } from "@/components/ui/CraftIcons";
 import { WavyLine, DashedLine } from "@/components/ui/DecorativePatterns";
+import { getHeroImage } from "@/lib/hero";
 
-export default function HeroSection() {
-  const t = useTranslations("Hero");
+export default async function HeroSection() {
+  const t = await getTranslations("Hero");
+  const heroImage = await getHeroImage();
 
   return (
     <section className="relative bg-fru-peach overflow-hidden">
@@ -43,14 +45,15 @@ export default function HeroSection() {
             <DashedLine className="w-40 h-2 text-fru-purple/40 mt-6 mx-auto md:mx-0" />
           </div>
 
-          <div className="flex-shrink-0">
+          <div className="flex-shrink-0 w-full max-w-[400px]">
             <Image
-              src="/images/fru-geoeffnet.jpg"
-              alt="Stoffhaus FRU – Wir haben geöffnet"
+              src={heroImage}
+              alt="Stoffhaus FRU"
               width={400}
               height={566}
-              className="rounded-2xl shadow-xl"
+              className="rounded-2xl shadow-xl w-full h-auto"
               priority
+              unoptimized={heroImage.startsWith("http")}
             />
           </div>
         </div>
