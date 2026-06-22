@@ -68,8 +68,15 @@ export async function saveHeroImage(formData: FormData) {
       contentType: file.type,
     });
     url = result.url;
-  } catch {
-    redirect("/admin?error=upload");
+  } catch (e) {
+    // redirect() throws internally, so it must live outside the try (otherwise
+    // its control-flow signal would be swallowed here). Capture the real Blob
+    // error and whether the token is even present, then surface both.
+    const detail = e instanceof Error ? e.message : String(e);
+    const tok = process.env.BLOB_READ_WRITE_TOKEN ? "1" : "0";
+    redirect(
+      `/admin?error=upload&detail=${encodeURIComponent(detail.slice(0, 200))}&tok=${tok}`,
+    );
   }
 
   await setHeroImage(url);

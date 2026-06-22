@@ -11,7 +11,12 @@ const inputClass =
 export default async function AdminPage({
   searchParams,
 }: {
-  searchParams: Promise<{ error?: string; saved?: string }>;
+  searchParams: Promise<{
+    error?: string;
+    saved?: string;
+    detail?: string;
+    tok?: string;
+  }>;
 }) {
   const sp = await searchParams;
   const authed = await isAuthed();
@@ -53,8 +58,7 @@ export default async function AdminPage({
     image: "Bitte eine Bilddatei auswählen.",
     imagetype: "Nur JPG-, PNG- oder WebP-Bilder sind erlaubt.",
     imagesize: "Das Bild ist zu groß (max. 8 MB).",
-    upload:
-      "Upload fehlgeschlagen. Der Blob-Speicher ist noch nicht verbunden (BLOB_READ_WRITE_TOKEN fehlt).",
+    upload: "Upload fehlgeschlagen.",
   };
 
   return (
@@ -78,9 +82,18 @@ export default async function AdminPage({
         </p>
       )}
       {sp.error && errorMessages[sp.error] && (
-        <p className="mb-6 rounded-lg bg-red-100 text-red-800 px-3 py-2 text-sm">
-          {errorMessages[sp.error]}
-        </p>
+        <div className="mb-6 rounded-lg bg-red-100 text-red-800 px-3 py-2 text-sm">
+          <p>{errorMessages[sp.error]}</p>
+          {sp.tok && (
+            <p className="mt-1 text-xs">
+              BLOB_READ_WRITE_TOKEN am Server:{" "}
+              {sp.tok === "1" ? "vorhanden" : "FEHLT"}
+            </p>
+          )}
+          {sp.detail && (
+            <p className="mt-1 font-mono text-xs break-all">{sp.detail}</p>
+          )}
+        </div>
       )}
 
       {/* Hero image upload */}
