@@ -57,12 +57,20 @@ export async function saveHeroImage(formData: FormData) {
   }
 
   // Upload to Vercel Blob with a random suffix so each upload gets a unique
-  // URL (avoids stale CDN caching of a fixed filename).
-  const { url } = await put(`hero/willkommen.${extFor(file.type)}`, file, {
-    access: "public",
-    addRandomSuffix: true,
-    contentType: file.type,
-  });
+  // URL (avoids stale CDN caching of a fixed filename). Wrapped so a missing
+  // BLOB_READ_WRITE_TOKEN (or any Blob error) shows a friendly message
+  // instead of crashing with a server-side exception.
+  let url: string;
+  try {
+    const result = await put(`hero/willkommen.${extFor(file.type)}`, file, {
+      access: "public",
+      addRandomSuffix: true,
+      contentType: file.type,
+    });
+    url = result.url;
+  } catch {
+    redirect("/admin?error=upload");
+  }
 
   await setHeroImage(url);
   revalidateTag("hero");

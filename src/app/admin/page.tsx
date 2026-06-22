@@ -53,6 +53,8 @@ export default async function AdminPage({
     image: "Bitte eine Bilddatei auswählen.",
     imagetype: "Nur JPG-, PNG- oder WebP-Bilder sind erlaubt.",
     imagesize: "Das Bild ist zu groß (max. 8 MB).",
+    upload:
+      "Upload fehlgeschlagen. Der Blob-Speicher ist noch nicht verbunden (BLOB_READ_WRITE_TOKEN fehlt).",
   };
 
   return (
