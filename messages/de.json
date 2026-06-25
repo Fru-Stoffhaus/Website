@@ -9,7 +9,9 @@
     "hours": "Öffnungszeiten",
     "contact": "Kontakt",
     "about": "Über uns",
+    "sortiment": "Sortiment",
     "gallery": "Einblicke",
+    "faq": "FAQ",
     "impressum": "Impressum",
     "datenschutz": "Datenschutz"
   },
@@ -21,6 +23,12 @@
     "tagline": "STOFFE · NÄHZUBEHÖR · KREATIVITÄT",
     "welcome": "Willkommen bei Stoffhaus",
     "subtitle": "Ihr neues Stoffgeschäft für Stoffe und Nähzubehör in Wiener Neustadt, Niederösterreich"
+  },
+  "Sortiment": {
+    "title": "Unser Sortiment"
+  },
+  "FAQ": {
+    "title": "Häufig gestellte Fragen"
   },
   "About": {
     "title": "Über uns",

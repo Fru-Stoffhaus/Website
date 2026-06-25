@@ -9,7 +9,9 @@
     "hours": "Opening Hours",
     "contact": "Contact",
     "about": "About Us",
+    "sortiment": "Range",
     "gallery": "Gallery",
+    "faq": "FAQ",
     "impressum": "Legal Notice",
     "datenschutz": "Privacy Policy"
   },
@@ -21,6 +23,12 @@
     "tagline": "FABRICS · SEWING SUPPLIES · CREATIVITY",
     "welcome": "Welcome to Stoffhaus",
     "subtitle": "Your new fabric store for fabrics and sewing supplies in Wiener Neustadt, Lower Austria"
+  },
+  "Sortiment": {
+    "title": "Our Range"
+  },
+  "FAQ": {
+    "title": "Frequently Asked Questions"
   },
   "About": {
     "title": "About Us",

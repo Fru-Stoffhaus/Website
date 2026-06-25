@@ -6,7 +6,14 @@ import { Link } from "@/i18n/navigation";
 import { STORE_INFO } from "@/lib/constants";
 import LanguageSwitcher from "./LanguageSwitcher";
 
-const NAV_SECTIONS = ["hours", "contact", "about", "gallery"] as const;
+const NAV_SECTIONS = [
+  "hours",
+  "contact",
+  "about",
+  "sortiment",
+  "gallery",
+  "faq",
+] as const;
 
 export default function Header() {
   const t = useTranslations("Navigation");
