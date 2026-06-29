@@ -26,7 +26,11 @@ export const SORTIMENT: Record<"de" | "en", SortimentCategory[]> = {
     },
     {
       heading: "Besondere Qualitäten",
-      items: ["Möbelstoffe", "Outdoorstoffe", "Wasserdichte Stoffe"],
+      items: [
+        "Möbel/Dekostoffe (nur kleine Bestände)",
+        "Outdoorstoffe",
+        "Wasserdichte Stoffe",
+      ],
     },
     {
       heading: "Nachhaltige Auswahl",
@@ -68,7 +72,11 @@ export const SORTIMENT: Record<"de" | "en", SortimentCategory[]> = {
     },
     {
       heading: "Special Qualities",
-      items: ["Upholstery fabrics", "Outdoor fabrics", "Waterproof fabrics"],
+      items: [
+        "Furnishing/decor fabrics (limited stock only)",
+        "Outdoor fabrics",
+        "Waterproof fabrics",
+      ],
     },
     {
       heading: "Sustainable Selection",

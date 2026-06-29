@@ -8,7 +8,17 @@ export async function generateMetadata({
 }) {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "Datenschutz" });
-  return { title: `${t("title")} – ${STORE_INFO.name}` };
+  return {
+    title: `${t("title")} – ${STORE_INFO.name}`,
+    alternates: {
+      canonical: `/${locale}/datenschutz`,
+      languages: {
+        de: "/de/datenschutz",
+        en: "/en/datenschutz",
+        "x-default": "/de/datenschutz",
+      },
+    },
+  };
 }
 
 export default async function DatenschutzPage({

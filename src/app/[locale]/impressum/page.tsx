@@ -8,7 +8,17 @@ export async function generateMetadata({
 }) {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "Impressum" });
-  return { title: `${t("title")} – ${STORE_INFO.name}` };
+  return {
+    title: `${t("title")} – ${STORE_INFO.name}`,
+    alternates: {
+      canonical: `/${locale}/impressum`,
+      languages: {
+        de: "/de/impressum",
+        en: "/en/impressum",
+        "x-default": "/de/impressum",
+      },
+    },
+  };
 }
 
 export default async function ImpressumPage({
