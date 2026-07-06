@@ -15,6 +15,12 @@ export default function LocalBusinessJsonLd() {
     email: STORE_INFO.contact.email,
     priceRange: "€€",
     currenciesAccepted: "EUR",
+    image: [
+      `${SITE_URL}/images/gallery-shop-interior.jpg`,
+      `${SITE_URL}/images/gallery-shop-shelves.jpg`,
+      `${SITE_URL}/images/gallery-fabrics-bolts.jpg`,
+    ],
+    logo: `${SITE_URL}/images/fru-brand.png`,
     address: {
       "@type": "PostalAddress",
       streetAddress: STORE_INFO.address.street,
