@@ -68,8 +68,9 @@
     "datenschutz": "Datenschutz"
   },
   "CookieConsent": {
-    "message": "Diese Website verwendet nur technisch notwendige Cookies. Es werden keine Tracking- oder Analyse-Cookies eingesetzt.",
-    "accept": "Verstanden",
+    "message": "Wir verwenden technisch notwendige Cookies sowie – nur mit Ihrer Einwilligung – Marketing-Cookies (Google Ads), um den Erfolg unserer Werbung zu messen.",
+    "accept": "Alle akzeptieren",
+    "reject": "Nur notwendige",
     "learnMore": "Mehr erfahren"
   },
   "NotFound": {

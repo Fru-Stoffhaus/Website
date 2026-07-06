@@ -1,6 +1,14 @@
 export const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL || "https://fru.co.at";
 
+// Google Ads conversion tracking. Only loaded after the visitor accepts
+// marketing cookies (see CookieConsent + GoogleAds components).
+export const GOOGLE_ADS = {
+  id: "AW-18271749219",
+  // "Oldalmegtekintés" (page view) conversion action label.
+  conversionLabel: "I25ECPz5scscEOOI04hE",
+} as const;
+
 export const STORE_INFO = {
   name: "Stoffhaus FRU",
   legalName: "FRU e.U.",

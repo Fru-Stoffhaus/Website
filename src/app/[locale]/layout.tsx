@@ -8,6 +8,7 @@ import { SITE_URL } from "@/lib/constants";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import CookieConsent from "@/components/ui/CookieConsent";
+import GoogleAds from "@/components/analytics/GoogleAds";
 import "@/styles/globals.css";
 
 const jost = Jost({
@@ -81,6 +82,7 @@ export default async function LocaleLayout({
           <main className="flex-1">{children}</main>
           <Footer />
           <CookieConsent />
+          <GoogleAds />
         </NextIntlClientProvider>
       </body>
     </html>

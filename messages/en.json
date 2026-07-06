@@ -68,8 +68,9 @@
     "datenschutz": "Privacy Policy"
   },
   "CookieConsent": {
-    "message": "This website uses only technically necessary cookies. No tracking or analytics cookies are used.",
-    "accept": "Got it",
+    "message": "We use technically necessary cookies and – only with your consent – marketing cookies (Google Ads) to measure the success of our advertising.",
+    "accept": "Accept all",
+    "reject": "Necessary only",
     "learnMore": "Learn more"
   },
   "NotFound": {

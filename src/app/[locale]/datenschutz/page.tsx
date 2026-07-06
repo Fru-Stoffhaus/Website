@@ -82,17 +82,61 @@ function DatenschutzDE() {
 
       <h2>3. Cookies</h2>
       <p>
-        Unsere Website verwendet ausschließlich technisch notwendige Cookies.
-        Diese Cookies sind für den ordnungsgemäßen Betrieb der Website
-        erforderlich (z. B. Speicherung der Spracheinstellung). Es werden keine
-        Tracking-, Analyse- oder Marketing-Cookies eingesetzt.
+        Unsere Website verwendet technisch notwendige Cookies sowie – nur mit
+        Ihrer Einwilligung – Marketing-Cookies. Technisch notwendige Cookies
+        sind für den ordnungsgemäßen Betrieb der Website erforderlich (z. B.
+        Speicherung der Spracheinstellung sowie Ihrer Cookie-Auswahl).
+      </p>
+      <p>
+        Marketing-Cookies (siehe Punkt 4 – Google Ads) werden ausschließlich
+        gesetzt, wenn Sie diese im Cookie-Banner aktiv akzeptieren
+        („Alle akzeptieren"). Wählen Sie „Nur notwendige", werden keine
+        Marketing-Cookies gesetzt und keine entsprechenden Skripte geladen.
+        Ihre Auswahl können Sie jederzeit ändern, indem Sie die in Ihrem
+        Browser gespeicherten Cookies löschen.
       </p>
       <p>
         Rechtsgrundlage: §165 Abs. 3 TKG 2021 – für technisch notwendige
-        Cookies ist keine Einwilligung erforderlich.
+        Cookies ist keine Einwilligung erforderlich. Für Marketing-Cookies
+        erfolgt die Verarbeitung auf Grundlage Ihrer Einwilligung (Art. 6 Abs.
+        1 lit. a DSGVO).
       </p>
 
-      <h2>4. Google Maps</h2>
+      <h2>4. Google Ads Conversion-Tracking</h2>
+      <p>
+        Diese Website nutzt Google Ads, den Online-Werbedienst der Google
+        Ireland Limited (Gordon House, Barrow Street, Dublin 4, Irland). Zur
+        Erfolgsmessung unserer Werbeanzeigen setzen wir das Google Ads
+        Conversion-Tracking ein. Gelangen Sie über eine unserer Anzeigen auf
+        die Website, wird ein Cookie gesetzt, anhand dessen Google und wir
+        erkennen können, dass ein Nutzer auf eine Anzeige geklickt und die
+        Website besucht hat. Diese Informationen werden ausschließlich statistisch
+        und nicht personenbezogen ausgewertet.
+      </p>
+      <p>
+        Das Conversion-Tracking wird erst nach Ihrer ausdrücklichen Einwilligung
+        geladen. Wählen Sie im Cookie-Banner „Alle akzeptieren", werden die
+        entsprechenden Skripte und Cookies von Google aktiviert. Lehnen Sie ab
+        bzw. wählen Sie „Nur notwendige", werden keine Google-Ads-Skripte
+        geladen und keine Daten an Google übermittelt. Sie können Ihre
+        Einwilligung jederzeit mit Wirkung für die Zukunft widerrufen, indem Sie
+        die gespeicherten Cookies in Ihrem Browser löschen.
+      </p>
+      <p>
+        Rechtsgrundlage: Art. 6 Abs. 1 lit. a DSGVO (Einwilligung). Im Zuge der
+        Verarbeitung kann es zu einer Übermittlung von Daten an Google in die
+        USA kommen. Weitere Informationen finden Sie in der{" "}
+        <a
+          href="https://policies.google.com/privacy"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Datenschutzerklärung von Google
+        </a>
+        .
+      </p>
+
+      <h2>5. Google Maps</h2>
       <p>
         Diese Website nutzt den Kartendienst Google Maps der Firma Google Inc.
         Die Karte wird erst nach Ihrer aktiven Zustimmung (Klick auf „Karte
@@ -111,7 +155,7 @@ function DatenschutzDE() {
         .
       </p>
 
-      <h2>5. Links zu sozialen Medien</h2>
+      <h2>6. Links zu sozialen Medien</h2>
       <p>
         Unsere Website enthält Links zu unseren Profilen auf Facebook und
         Instagram. Es handelt sich um einfache Hyperlinks – beim Besuch unserer
@@ -121,7 +165,7 @@ function DatenschutzDE() {
         besuchen.
       </p>
 
-      <h2>6. Fotos und Bildmaterial</h2>
+      <h2>7. Fotos und Bildmaterial</h2>
       <p>
         Auf dieser Website werden Fotos unseres Geschäfts, unserer Produkte
         und gegebenenfalls von Veranstaltungen veröffentlicht. Sofern Personen
@@ -137,7 +181,7 @@ function DatenschutzDE() {
         </a>
       </p>
 
-      <h2>7. Videoüberwachung</h2>
+      <h2>8. Videoüberwachung</h2>
       <p>
         Zum Schutz von Personen, Eigentum sowie zur Verhinderung und Aufklärung
         von Diebstählen und Sachbeschädigungen werden Teile unserer
@@ -181,11 +225,11 @@ function DatenschutzDE() {
       </p>
       <p>
         Ihre Rechte als betroffene Person sowie Ihr Beschwerderecht bei der
-        Datenschutzbehörde gelten auch für die Videoüberwachung – siehe Punkt 9
-        und Punkt 10.
+        Datenschutzbehörde gelten auch für die Videoüberwachung – siehe Punkt 10
+        und Punkt 11.
       </p>
 
-      <h2>8. Hosting</h2>
+      <h2>9. Hosting</h2>
       <p>
         Diese Website wird bei Vercel Inc. (San Francisco, USA) gehostet. Beim
         Besuch unserer Website werden Ihre personenbezogenen Daten (z. B.
@@ -197,7 +241,7 @@ function DatenschutzDE() {
         Framework. Vercel ist unter dem Data Privacy Framework zertifiziert.
       </p>
 
-      <h2>9. Ihre Rechte</h2>
+      <h2>10. Ihre Rechte</h2>
       <p>
         Sie haben gegenüber uns folgende Rechte hinsichtlich Ihrer
         personenbezogenen Daten:
@@ -217,7 +261,7 @@ function DatenschutzDE() {
         </a>
       </p>
 
-      <h2>10. Beschwerderecht</h2>
+      <h2>11. Beschwerderecht</h2>
       <p>
         Sie haben das Recht, sich bei der zuständigen Aufsichtsbehörde zu
         beschweren:
@@ -238,15 +282,17 @@ function DatenschutzDE() {
         </a>
       </p>
 
-      <h2>11. Speicherdauer</h2>
+      <h2>12. Speicherdauer</h2>
       <p>
         Server-Logfiles werden nach maximal 30 Tagen gelöscht. Der Cookie zur
         Spracheinstellung wird nur für die Dauer der Browser-Sitzung
-        gespeichert.
+        gespeichert. Marketing-Cookies von Google Ads werden entsprechend den
+        Vorgaben von Google gespeichert (in der Regel bis zu 90 Tage) und können
+        von Ihnen jederzeit im Browser gelöscht werden.
       </p>
 
       <p className="text-sm text-fru-dark/50 mt-12">
-        Stand: Juni 2026
+        Stand: Juli 2026
       </p>
     </article>
   );
@@ -298,17 +344,56 @@ function DatenschutzEN() {
 
       <h2>3. Cookies</h2>
       <p>
-        Our website uses only technically necessary cookies. These cookies are
-        required for the proper operation of the website (e.g., storing your
-        language preference). No tracking, analytics, or marketing cookies are
-        used.
+        Our website uses technically necessary cookies and – only with your
+        consent – marketing cookies. Technically necessary cookies are required
+        for the proper operation of the website (e.g., storing your language
+        preference and your cookie choice).
+      </p>
+      <p>
+        Marketing cookies (see section 4 – Google Ads) are only set if you
+        actively accept them in the cookie banner (&quot;Accept all&quot;). If
+        you choose &quot;Necessary only&quot;, no marketing cookies are set and
+        no corresponding scripts are loaded. You can change your choice at any
+        time by deleting the cookies stored in your browser.
       </p>
       <p>
         Legal basis: §165(3) TKG 2021 (Austrian Telecommunications Act) – no
-        consent is required for technically necessary cookies.
+        consent is required for technically necessary cookies. Marketing cookies
+        are processed on the basis of your consent (Art. 6(1)(a) GDPR).
       </p>
 
-      <h2>4. Google Maps</h2>
+      <h2>4. Google Ads Conversion Tracking</h2>
+      <p>
+        This website uses Google Ads, the online advertising service of Google
+        Ireland Limited (Gordon House, Barrow Street, Dublin 4, Ireland). To
+        measure the success of our advertisements, we use Google Ads conversion
+        tracking. If you reach our website via one of our ads, a cookie is set
+        that allows Google and us to recognise that a user clicked an ad and
+        visited the website. This information is evaluated on a statistical,
+        non-personal basis only.
+      </p>
+      <p>
+        Conversion tracking is only loaded after your express consent. If you
+        select &quot;Accept all&quot; in the cookie banner, the corresponding
+        Google scripts and cookies are activated. If you decline or choose
+        &quot;Necessary only&quot;, no Google Ads scripts are loaded and no data
+        is transmitted to Google. You may withdraw your consent at any time with
+        effect for the future by deleting the cookies stored in your browser.
+      </p>
+      <p>
+        Legal basis: Art. 6(1)(a) GDPR (consent). Processing may involve a
+        transfer of data to Google in the USA. For more information, see{" "}
+        <a
+          href="https://policies.google.com/privacy"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Google&apos;s Privacy Policy
+        </a>
+        .
+      </p>
+
+      <h2>5. Google Maps</h2>
       <p>
         This website uses the Google Maps service by Google Inc. The map is only
         loaded after your active consent (clicking &quot;Load Map&quot;). Only
@@ -326,7 +411,7 @@ function DatenschutzEN() {
         .
       </p>
 
-      <h2>5. Social Media Links</h2>
+      <h2>6. Social Media Links</h2>
       <p>
         Our website contains links to our profiles on Facebook and Instagram.
         These are simple hyperlinks – no data is transmitted to Meta Platforms,
@@ -335,7 +420,7 @@ function DatenschutzEN() {
         respective platform.
       </p>
 
-      <h2>6. Photos and Images</h2>
+      <h2>7. Photos and Images</h2>
       <p>
         This website publishes photos of our store, our products, and
         occasionally events. If individuals are recognizable in photos,
@@ -350,7 +435,7 @@ function DatenschutzEN() {
         </a>
       </p>
 
-      <h2>7. Video Surveillance</h2>
+      <h2>8. Video Surveillance</h2>
       <p>
         To protect persons and property and to prevent and investigate theft and
         property damage, parts of our business premises at{" "}
@@ -391,10 +476,10 @@ function DatenschutzEN() {
       <p>
         Your rights as a data subject and your right to lodge a complaint with
         the data protection authority also apply to the video surveillance –
-        see sections 9 and 10.
+        see sections 10 and 11.
       </p>
 
-      <h2>8. Hosting</h2>
+      <h2>9. Hosting</h2>
       <p>
         This website is hosted by Vercel Inc. (San Francisco, USA). When
         visiting our website, your personal data (e.g., IP address) is processed
@@ -406,7 +491,7 @@ function DatenschutzEN() {
         Framework. Vercel is certified under the Data Privacy Framework.
       </p>
 
-      <h2>9. Your Rights</h2>
+      <h2>10. Your Rights</h2>
       <p>
         You have the following rights regarding your personal data:
       </p>
@@ -425,7 +510,7 @@ function DatenschutzEN() {
         </a>
       </p>
 
-      <h2>10. Right to Lodge a Complaint</h2>
+      <h2>11. Right to Lodge a Complaint</h2>
       <p>
         You have the right to lodge a complaint with the competent supervisory
         authority:
@@ -446,14 +531,17 @@ function DatenschutzEN() {
         </a>
       </p>
 
-      <h2>11. Data Retention</h2>
+      <h2>12. Data Retention</h2>
       <p>
         Server log files are deleted after a maximum of 30 days. The language
         preference cookie is stored only for the duration of the browser session.
+        Google Ads marketing cookies are stored in accordance with Google&apos;s
+        specifications (generally up to 90 days) and can be deleted by you in your
+        browser at any time.
       </p>
 
       <p className="text-sm text-fru-dark/50 mt-12">
-        Last updated: June 2026
+        Last updated: July 2026
       </p>
     </article>
   );
