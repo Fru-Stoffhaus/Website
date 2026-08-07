@@ -9,7 +9,12 @@ export default async function FaqJsonLd() {
     "@context": "https://schema.org",
     "@type": "FAQPage",
     mainEntity: items.map((item) => {
-      const answer = [item.a, ...(item.list ?? []), item.after]
+      const answer = [
+        item.a,
+        ...(item.list ?? []),
+        item.after,
+        item.link && `${item.link.before}${item.link.label}.`,
+      ]
         .filter(Boolean)
         .join(" ");
       return {

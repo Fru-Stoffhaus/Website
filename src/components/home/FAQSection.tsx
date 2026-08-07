@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import { STORE_INFO } from "@/lib/constants";
 import { FAQ, type FaqItem } from "@/lib/faq";
 import { NeedlesIcon, SnipsIcon } from "@/components/ui/CraftIcons";
@@ -81,6 +82,17 @@ function FAQEntry({ item, index }: { item: FaqItem; index: number }) {
             </ul>
           )}
           {item.after && <p className="mt-3">{item.after}</p>}
+          {item.link && (
+            <p className="mt-3">
+              {item.link.before}
+              <Link
+                href={item.link.href}
+                className="text-fru-purple underline underline-offset-2 hover:text-fru-peach transition-colors"
+              >
+                {item.link.label}
+              </Link>
+            </p>
+          )}
         </div>
       )}
     </div>

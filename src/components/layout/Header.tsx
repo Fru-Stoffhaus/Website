@@ -1,30 +1,43 @@
 "use client";
 
 import { useState } from "react";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { STORE_INFO } from "@/lib/constants";
 import LanguageSwitcher from "./LanguageSwitcher";
 
-const NAV_SECTIONS = [
-  "hours",
-  "contact",
-  "about",
-  "sortiment",
-  "gallery",
-  "faq",
+/**
+ * `section` entries scroll to an anchor on the home page, `page` entries are
+ * real routes. The `key` doubles as the Navigation translation key.
+ */
+const NAV_ITEMS = [
+  { key: "hours", type: "section" },
+  { key: "contact", type: "section" },
+  { key: "bestellung", type: "page", href: "/bestellung-versand" },
+  { key: "about", type: "section" },
+  { key: "sortiment", type: "section" },
+  { key: "gallery", type: "section" },
+  { key: "faq", type: "section" },
 ] as const;
 
 export default function Header() {
   const t = useTranslations("Navigation");
+  const locale = useLocale();
   const [menuOpen, setMenuOpen] = useState(false);
+
+  // Anchors are absolute so they also work from sub-pages like /de/agb.
+  // On the home page the browser treats them as a same-document hash jump.
+  const anchorHref = (id: string) => `/${locale}#${id}`;
 
   return (
     <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-fru-peach/20">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="flex items-center justify-between h-16 sm:h-20">
-          <Link href="/" className="flex items-center gap-2 group">
-            <span className="font-heading text-2xl sm:text-3xl font-bold tracking-tight">
+          {/* Only pinned at lg+, where the seven-item nav competes for width.
+              Below that the logo must stay shrinkable or the mobile bar
+              (social icons, language switcher, hamburger) overflows. */}
+          <Link href="/" className="flex items-center gap-2 group lg:shrink-0">
+            <span className="font-heading text-2xl sm:text-3xl font-bold tracking-tight lg:whitespace-nowrap">
               <span className="text-fru-green">Stoff</span>
               <span className="text-fru-green">haus</span>{" "}
               <span className="font-lot text-fru-purple">F</span>
@@ -33,16 +46,26 @@ export default function Header() {
             </span>
           </Link>
 
-          <nav className="hidden lg:flex items-center gap-5">
-            {NAV_SECTIONS.map((id) => (
-              <a
-                key={id}
-                href={`#${id}`}
-                className="font-heading text-sm uppercase tracking-wider text-fru-dark transition-colors hover:text-fru-purple"
-              >
-                {t(id)}
-              </a>
-            ))}
+          {/* Seven nav items plus the logo only fit with a tighter gap below
+              xl — otherwise the logo gets squeezed onto two lines. */}
+          <nav className="hidden lg:flex items-center gap-3 xl:gap-5">
+            {NAV_ITEMS.map((item) => {
+              const className =
+                "font-heading text-sm uppercase tracking-wide xl:tracking-wider text-fru-dark transition-colors hover:text-fru-purple whitespace-nowrap";
+              return item.type === "page" ? (
+                <Link key={item.key} href={item.href} className={className}>
+                  {t(item.key)}
+                </Link>
+              ) : (
+                <a
+                  key={item.key}
+                  href={anchorHref(item.key)}
+                  className={className}
+                >
+                  {t(item.key)}
+                </a>
+              );
+            })}
 
             <div className="flex items-center gap-2 ml-2">
               <a
@@ -72,7 +95,10 @@ export default function Header() {
             <LanguageSwitcher />
           </nav>
 
-          <div className="flex items-center gap-3 lg:hidden">
+          {/* gap-1 on the narrowest phones: at gap-3 the logo, social icons,
+              language switcher and hamburger together overflow a 390px
+              viewport and give the whole page a horizontal scrollbar. */}
+          <div className="flex items-center gap-1 sm:gap-3 lg:hidden shrink-0">
             <a
               href={STORE_INFO.social.facebook}
               target="_blank"
@@ -129,16 +155,30 @@ export default function Header() {
 
         {menuOpen && (
           <nav className="lg:hidden pb-4 border-t border-fru-peach/20 pt-4 space-y-1">
-            {NAV_SECTIONS.map((id) => (
-              <a
-                key={id}
-                href={`#${id}`}
-                className="block py-2 font-heading text-sm uppercase tracking-wider text-fru-dark hover:text-fru-purple"
-                onClick={() => setMenuOpen(false)}
-              >
-                {t(id)}
-              </a>
-            ))}
+            {NAV_ITEMS.map((item) => {
+              const className =
+                "block py-2 font-heading text-sm uppercase tracking-wider text-fru-dark hover:text-fru-purple";
+              const close = () => setMenuOpen(false);
+              return item.type === "page" ? (
+                <Link
+                  key={item.key}
+                  href={item.href}
+                  className={className}
+                  onClick={close}
+                >
+                  {t(item.key)}
+                </Link>
+              ) : (
+                <a
+                  key={item.key}
+                  href={anchorHref(item.key)}
+                  className={className}
+                  onClick={close}
+                >
+                  {t(item.key)}
+                </a>
+              );
+            })}
           </nav>
         )}
       </div>

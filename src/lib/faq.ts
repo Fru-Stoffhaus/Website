@@ -12,6 +12,8 @@ export type FaqItem = {
   after?: string;
   /** When true, the email address in `a`/`after` is rendered as a mailto link. */
   email?: boolean;
+  /** Optional internal link, rendered as its own paragraph after `after`. */
+  link?: { before: string; href: string; label: string };
 };
 
 export const FAQ: Record<"de" | "en", FaqItem[]> = {
@@ -32,7 +34,18 @@ export const FAQ: Record<"de" | "en", FaqItem[]> = {
     },
     {
       q: "Gibt es einen Onlineshop?",
-      a: "Nein, aktuell verkaufen wir ausschließlich vor Ort. Stoffe können jedoch gerne per E-Mail oder Nachricht angefragt oder reserviert werden.",
+      a: `Derzeit haben wir noch keinen Onlineshop. Wenn Sie etwas entdeckt haben, das Ihnen gefällt, können Sie Ihre Bestellung gerne per E-Mail oder Nachricht bei uns aufgeben. E-Mail: ${EMAIL}`,
+      email: true,
+      link: {
+        before:
+          "Weitere Informationen zu Bestellung, Zahlung und Versand finden Sie im Bereich ",
+        href: "/bestellung-versand",
+        label: "Bestellung & Versand",
+      },
+    },
+    {
+      q: "Kann man mit Karte bezahlen?",
+      a: "Ja, Kartenzahlung ist bei uns im Geschäft selbstverständlich möglich. Bei Bestellungen mit Versand erfolgt die Zahlung per Überweisung.",
     },
     {
       q: "Gibt es einen Mengenrabatt?",
@@ -61,7 +74,18 @@ export const FAQ: Record<"de" | "en", FaqItem[]> = {
     },
     {
       q: "Is there an online shop?",
-      a: "No, we currently sell exclusively in store. However, you are welcome to enquire about or reserve fabrics by email or message.",
+      a: `We do not have an online shop yet. If you have spotted something you like, you are welcome to place your order with us by email or message. Email: ${EMAIL}`,
+      email: true,
+      link: {
+        before:
+          "You can find more information about ordering, payment and shipping under ",
+        href: "/bestellung-versand",
+        label: "Ordering & Shipping",
+      },
+    },
+    {
+      q: "Can I pay by card?",
+      a: "Yes, card payment is of course possible in our store. For orders that are shipped, payment is made by bank transfer.",
     },
     {
       q: "Is there a bulk discount?",

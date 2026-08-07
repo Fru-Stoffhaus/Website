@@ -43,6 +43,24 @@ export default function Footer() {
               >
                 {t("datenschutz")}
               </Link>
+              <Link
+                href="/agb"
+                className="text-sm text-white/70 hover:text-white transition-colors"
+              >
+                {t("agb")}
+              </Link>
+              <Link
+                href="/widerrufsbelehrung"
+                className="text-sm text-white/70 hover:text-white transition-colors"
+              >
+                {t("widerruf")}
+              </Link>
+              <Link
+                href="/bestellung-versand"
+                className="text-sm text-white/70 hover:text-white transition-colors"
+              >
+                {t("bestellung")}
+              </Link>
             </div>
           </div>
 

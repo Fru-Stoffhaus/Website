@@ -8,6 +8,7 @@
     "home": "Startseite",
     "hours": "Öffnungszeiten",
     "contact": "Kontakt",
+    "bestellung": "Bestellung",
     "about": "Über uns",
     "sortiment": "Sortiment",
     "gallery": "Einblicke",
@@ -65,7 +66,10 @@
   "Footer": {
     "rights": "© {year} FRU e.U. Alle Rechte vorbehalten.",
     "impressum": "Impressum",
-    "datenschutz": "Datenschutz"
+    "datenschutz": "Datenschutz",
+    "agb": "AGB",
+    "widerruf": "Widerrufsbelehrung",
+    "bestellung": "Bestellung & Versand"
   },
   "CookieConsent": {
     "message": "Wir verwenden technisch notwendige Cookies sowie – nur mit Ihrer Einwilligung – Marketing-Cookies (Google Ads), um den Erfolg unserer Werbung zu messen.",
@@ -83,5 +87,15 @@
   },
   "Datenschutz": {
     "title": "Datenschutzerklärung"
+  },
+  "BestellungVersand": {
+    "title": "Bestellung & Versand",
+    "description": "Bestellen Sie Stoffe und Nähzubehör bei Stoffhaus FRU per E-Mail oder WhatsApp. Versand mit DPD in ganz Österreich, ab 70 € versandkostenfrei."
+  },
+  "AGB": {
+    "title": "Allgemeine Geschäftsbedingungen"
+  },
+  "Widerruf": {
+    "title": "Widerrufsbelehrung"
   }
 }

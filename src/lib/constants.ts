@@ -14,6 +14,7 @@ export const STORE_INFO = {
   legalName: "FRU e.U.",
   owner: "Fruzsina Tóth",
   uid: "ATU83216538",
+  companyRegister: "FN 637754z, Landesgericht Eisenstadt",
   address: {
     street: "Allerheiligengasse 12",
     postalCode: "2700",
@@ -25,6 +26,8 @@ export const STORE_INFO = {
   contact: {
     email: "info@fru.co.at",
     phone: "+43 660 5534141",
+    // Same number as `phone`, in the digits-only form wa.me expects.
+    whatsapp: "https://wa.me/436605534141",
   },
   social: {
     facebook: "https://www.facebook.com/share/18u5oFdvcs/",
@@ -39,4 +42,15 @@ export const STORE_INFO = {
     lng: 16.243,
   },
   tagline: "STOFFE · NÄHZUBEHÖR · KREATIVITÄT",
+} as const;
+
+// Shipping terms for mail orders. Kept in one place so the Bestellung & Versand
+// page, the AGB and the FAQ can never drift apart.
+// NOTE: `freeFrom` is also spelled out in the BestellungVersand.description
+// meta text in messages/de.json and messages/en.json — update those too.
+export const SHIPPING = {
+  carrier: "DPD",
+  cost: "6,90 €",
+  freeFrom: "70 €",
+  deliveryDays: "2–4",
 } as const;

@@ -1,5 +1,6 @@
-import { setRequestLocale, getTranslations } from "next-intl/server";
+import { setRequestLocale } from "next-intl/server";
 import { STORE_INFO } from "@/lib/constants";
+import { pageMetadata } from "@/lib/pageMetadata";
 
 export async function generateMetadata({
   params,
@@ -7,18 +8,11 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: "Datenschutz" });
-  return {
-    title: `${t("title")} – ${STORE_INFO.name}`,
-    alternates: {
-      canonical: `/${locale}/datenschutz`,
-      languages: {
-        de: "/de/datenschutz",
-        en: "/en/datenschutz",
-        "x-default": "/de/datenschutz",
-      },
-    },
-  };
+  return pageMetadata({
+    locale,
+    namespace: "Datenschutz",
+    slug: "datenschutz",
+  });
 }
 
 export default async function DatenschutzPage({
@@ -38,7 +32,7 @@ export default async function DatenschutzPage({
 
 function DatenschutzDE() {
   return (
-    <article className="prose prose-lg max-w-none">
+    <article className="legal-prose max-w-none">
       <h1 className="font-heading text-3xl sm:text-4xl font-bold text-fru-dark mb-8">
         Datenschutzerklärung
       </h1>
@@ -80,7 +74,59 @@ function DatenschutzDE() {
         technisch einwandfreien Darstellung und Sicherheit der Website).
       </p>
 
-      <h2>3. Cookies</h2>
+      <h2>3. Bestellabwicklung und Kundenkommunikation</h2>
+      <p>
+        Wenn Sie uns eine Anfrage oder Bestellung übermitteln, verarbeiten wir
+        die von Ihnen bekannt gegebenen Daten, um Ihre Anfrage zu beantworten und
+        Ihre Bestellung abzuwickeln. Verarbeitet werden insbesondere:
+      </p>
+      <ul>
+        <li>Name</li>
+        <li>Liefer- und Rechnungsadresse</li>
+        <li>E-Mail-Adresse und gegebenenfalls Telefonnummer</li>
+        <li>Angaben zur Bestellung (Artikel, Menge, Zuschnitt)</li>
+        <li>Zahlungsinformationen aus der Überweisung</li>
+      </ul>
+      <p>
+        Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO (Erfüllung eines Vertrags
+        bzw. Durchführung vorvertraglicher Maßnahmen). Für die Ausstellung und
+        Aufbewahrung von Rechnungen ist zusätzlich Art. 6 Abs. 1 lit. c DSGVO in
+        Verbindung mit den steuerrechtlichen Aufbewahrungspflichten maßgeblich.
+      </p>
+      <p>
+        Ihre Daten werden nur insoweit an Dritte weitergegeben, als dies für die
+        Abwicklung erforderlich ist. Empfänger sind:
+      </p>
+      <ul>
+        <li>
+          das von uns beauftragte Versandunternehmen (DPD Austria GmbH) zur
+          Zustellung Ihrer Bestellung,
+        </li>
+        <li>unsere Steuerberatung sowie das Finanzamt im Rahmen der Buchhaltung,</li>
+        <li>unser Bankinstitut zur Abwicklung der Zahlung.</li>
+      </ul>
+      <p>
+        Bestell- und Rechnungsdaten werden gemäß § 132 BAO sieben Jahre
+        aufbewahrt und danach gelöscht. Reine Anfragen ohne Vertragsabschluss
+        löschen wir, sobald sie erledigt sind und keine Aufbewahrungspflichten
+        entgegenstehen.
+      </p>
+      <p>
+        <strong>Kommunikation über Messenger-Dienste:</strong> Sie können uns
+        Anfragen und Bestellungen auch über WhatsApp, Instagram oder Facebook
+        übermitteln. Diese Dienste werden von Meta Platforms Ireland Ltd., 4
+        Grand Canal Square, Dublin 2, Irland betrieben. Bei der Nutzung dieser
+        Kanäle werden Ihre Nachrichten und Metadaten auf den Servern von Meta
+        verarbeitet; eine Übermittlung in die USA kann nicht ausgeschlossen
+        werden. Auf diese Verarbeitung haben wir keinen Einfluss. Wenn Sie das
+        vermeiden möchten, kontaktieren Sie uns bitte per E-Mail an{" "}
+        <a href={`mailto:${STORE_INFO.contact.email}`}>
+          {STORE_INFO.contact.email}
+        </a>{" "}
+        oder telefonisch.
+      </p>
+
+      <h2>4. Cookies</h2>
       <p>
         Unsere Website verwendet technisch notwendige Cookies sowie – nur mit
         Ihrer Einwilligung – Marketing-Cookies. Technisch notwendige Cookies
@@ -88,7 +134,7 @@ function DatenschutzDE() {
         Speicherung der Spracheinstellung sowie Ihrer Cookie-Auswahl).
       </p>
       <p>
-        Marketing-Cookies (siehe Punkt 4 – Google Ads) werden ausschließlich
+        Marketing-Cookies (siehe Punkt 5 – Google Ads) werden ausschließlich
         gesetzt, wenn Sie diese im Cookie-Banner aktiv akzeptieren
         („Alle akzeptieren"). Wählen Sie „Nur notwendige", werden keine
         Marketing-Cookies gesetzt und keine entsprechenden Skripte geladen.
@@ -102,7 +148,7 @@ function DatenschutzDE() {
         1 lit. a DSGVO).
       </p>
 
-      <h2>4. Google Ads Conversion-Tracking</h2>
+      <h2>5. Google Ads Conversion-Tracking</h2>
       <p>
         Diese Website nutzt Google Ads, den Online-Werbedienst der Google
         Ireland Limited (Gordon House, Barrow Street, Dublin 4, Irland). Zur
@@ -136,7 +182,7 @@ function DatenschutzDE() {
         .
       </p>
 
-      <h2>5. Google Maps</h2>
+      <h2>6. Google Maps</h2>
       <p>
         Diese Website nutzt den Kartendienst Google Maps der Firma Google Inc.
         Die Karte wird erst nach Ihrer aktiven Zustimmung (Klick auf „Karte
@@ -155,7 +201,7 @@ function DatenschutzDE() {
         .
       </p>
 
-      <h2>6. Links zu sozialen Medien</h2>
+      <h2>7. Links zu sozialen Medien</h2>
       <p>
         Unsere Website enthält Links zu unseren Profilen auf Facebook und
         Instagram. Es handelt sich um einfache Hyperlinks – beim Besuch unserer
@@ -165,7 +211,7 @@ function DatenschutzDE() {
         besuchen.
       </p>
 
-      <h2>7. Fotos und Bildmaterial</h2>
+      <h2>8. Fotos und Bildmaterial</h2>
       <p>
         Auf dieser Website werden Fotos unseres Geschäfts, unserer Produkte
         und gegebenenfalls von Veranstaltungen veröffentlicht. Sofern Personen
@@ -181,7 +227,7 @@ function DatenschutzDE() {
         </a>
       </p>
 
-      <h2>8. Videoüberwachung</h2>
+      <h2>9. Videoüberwachung</h2>
       <p>
         Zum Schutz von Personen, Eigentum sowie zur Verhinderung und Aufklärung
         von Diebstählen und Sachbeschädigungen werden Teile unserer
@@ -225,11 +271,11 @@ function DatenschutzDE() {
       </p>
       <p>
         Ihre Rechte als betroffene Person sowie Ihr Beschwerderecht bei der
-        Datenschutzbehörde gelten auch für die Videoüberwachung – siehe Punkt 10
-        und Punkt 11.
+        Datenschutzbehörde gelten auch für die Videoüberwachung – siehe Punkt 11
+        und Punkt 12.
       </p>
 
-      <h2>9. Hosting</h2>
+      <h2>10. Hosting</h2>
       <p>
         Diese Website wird bei Vercel Inc. (San Francisco, USA) gehostet. Beim
         Besuch unserer Website werden Ihre personenbezogenen Daten (z. B.
@@ -241,7 +287,7 @@ function DatenschutzDE() {
         Framework. Vercel ist unter dem Data Privacy Framework zertifiziert.
       </p>
 
-      <h2>10. Ihre Rechte</h2>
+      <h2>11. Ihre Rechte</h2>
       <p>
         Sie haben gegenüber uns folgende Rechte hinsichtlich Ihrer
         personenbezogenen Daten:
@@ -261,7 +307,7 @@ function DatenschutzDE() {
         </a>
       </p>
 
-      <h2>11. Beschwerderecht</h2>
+      <h2>12. Beschwerderecht</h2>
       <p>
         Sie haben das Recht, sich bei der zuständigen Aufsichtsbehörde zu
         beschweren:
@@ -282,7 +328,7 @@ function DatenschutzDE() {
         </a>
       </p>
 
-      <h2>12. Speicherdauer</h2>
+      <h2>13. Speicherdauer</h2>
       <p>
         Server-Logfiles werden nach maximal 30 Tagen gelöscht. Der Cookie zur
         Spracheinstellung wird nur für die Dauer der Browser-Sitzung
@@ -290,9 +336,15 @@ function DatenschutzDE() {
         Vorgaben von Google gespeichert (in der Regel bis zu 90 Tage) und können
         von Ihnen jederzeit im Browser gelöscht werden.
       </p>
+      <p>
+        Bestell- und Rechnungsdaten werden aufgrund der gesetzlichen
+        Aufbewahrungspflicht nach § 132 BAO sieben Jahre gespeichert.
+        Korrespondenz ohne Vertragsabschluss wird gelöscht, sobald die Anfrage
+        abgeschlossen ist.
+      </p>
 
       <p className="text-sm text-fru-dark/50 mt-12">
-        Stand: Juli 2026
+        Stand: August 2026
       </p>
     </article>
   );
@@ -300,7 +352,7 @@ function DatenschutzDE() {
 
 function DatenschutzEN() {
   return (
-    <article className="prose prose-lg max-w-none">
+    <article className="legal-prose max-w-none">
       <h1 className="font-heading text-3xl sm:text-4xl font-bold text-fru-dark mb-8">
         Privacy Policy
       </h1>
@@ -342,7 +394,58 @@ function DatenschutzEN() {
         security of the website).
       </p>
 
-      <h2>3. Cookies</h2>
+      <h2>3. Order Processing and Customer Communication</h2>
+      <p>
+        When you send us an enquiry or an order, we process the data you provide
+        in order to answer your enquiry and fulfil your order. In particular, we
+        process:
+      </p>
+      <ul>
+        <li>Name</li>
+        <li>Delivery and billing address</li>
+        <li>Email address and, where applicable, telephone number</li>
+        <li>Order details (item, quantity, cutting length)</li>
+        <li>Payment information from the bank transfer</li>
+      </ul>
+      <p>
+        The legal basis is Art. 6(1)(b) GDPR (performance of a contract or
+        pre-contractual measures). For issuing and retaining invoices, Art.
+        6(1)(c) GDPR in conjunction with statutory tax retention obligations also
+        applies.
+      </p>
+      <p>
+        Your data is passed on to third parties only to the extent necessary to
+        process your order. Recipients are:
+      </p>
+      <ul>
+        <li>
+          the shipping company we commission (DPD Austria GmbH) for delivery of
+          your order,
+        </li>
+        <li>our tax adviser and the tax office as part of our bookkeeping,</li>
+        <li>our bank for processing the payment.</li>
+      </ul>
+      <p>
+        Order and invoice data is retained for seven years in accordance with
+        § 132 of the Austrian Federal Fiscal Code (BAO) and deleted thereafter.
+        Enquiries that do not lead to a contract are deleted as soon as they have
+        been dealt with, unless retention obligations apply.
+      </p>
+      <p>
+        <strong>Communication via messenger services:</strong> You may also send
+        us enquiries and orders via WhatsApp, Instagram or Facebook. These
+        services are operated by Meta Platforms Ireland Ltd., 4 Grand Canal
+        Square, Dublin 2, Ireland. When you use these channels, your messages and
+        metadata are processed on Meta&apos;s servers; a transfer to the USA
+        cannot be excluded. We have no influence over this processing. If you
+        wish to avoid it, please contact us by email at{" "}
+        <a href={`mailto:${STORE_INFO.contact.email}`}>
+          {STORE_INFO.contact.email}
+        </a>{" "}
+        or by telephone.
+      </p>
+
+      <h2>4. Cookies</h2>
       <p>
         Our website uses technically necessary cookies and – only with your
         consent – marketing cookies. Technically necessary cookies are required
@@ -350,7 +453,7 @@ function DatenschutzEN() {
         preference and your cookie choice).
       </p>
       <p>
-        Marketing cookies (see section 4 – Google Ads) are only set if you
+        Marketing cookies (see section 5 – Google Ads) are only set if you
         actively accept them in the cookie banner (&quot;Accept all&quot;). If
         you choose &quot;Necessary only&quot;, no marketing cookies are set and
         no corresponding scripts are loaded. You can change your choice at any
@@ -362,7 +465,7 @@ function DatenschutzEN() {
         are processed on the basis of your consent (Art. 6(1)(a) GDPR).
       </p>
 
-      <h2>4. Google Ads Conversion Tracking</h2>
+      <h2>5. Google Ads Conversion Tracking</h2>
       <p>
         This website uses Google Ads, the online advertising service of Google
         Ireland Limited (Gordon House, Barrow Street, Dublin 4, Ireland). To
@@ -393,7 +496,7 @@ function DatenschutzEN() {
         .
       </p>
 
-      <h2>5. Google Maps</h2>
+      <h2>6. Google Maps</h2>
       <p>
         This website uses the Google Maps service by Google Inc. The map is only
         loaded after your active consent (clicking &quot;Load Map&quot;). Only
@@ -411,7 +514,7 @@ function DatenschutzEN() {
         .
       </p>
 
-      <h2>6. Social Media Links</h2>
+      <h2>7. Social Media Links</h2>
       <p>
         Our website contains links to our profiles on Facebook and Instagram.
         These are simple hyperlinks – no data is transmitted to Meta Platforms,
@@ -420,7 +523,7 @@ function DatenschutzEN() {
         respective platform.
       </p>
 
-      <h2>7. Photos and Images</h2>
+      <h2>8. Photos and Images</h2>
       <p>
         This website publishes photos of our store, our products, and
         occasionally events. If individuals are recognizable in photos,
@@ -435,7 +538,7 @@ function DatenschutzEN() {
         </a>
       </p>
 
-      <h2>8. Video Surveillance</h2>
+      <h2>9. Video Surveillance</h2>
       <p>
         To protect persons and property and to prevent and investigate theft and
         property damage, parts of our business premises at{" "}
@@ -476,10 +579,10 @@ function DatenschutzEN() {
       <p>
         Your rights as a data subject and your right to lodge a complaint with
         the data protection authority also apply to the video surveillance –
-        see sections 10 and 11.
+        see sections 11 and 12.
       </p>
 
-      <h2>9. Hosting</h2>
+      <h2>10. Hosting</h2>
       <p>
         This website is hosted by Vercel Inc. (San Francisco, USA). When
         visiting our website, your personal data (e.g., IP address) is processed
@@ -491,7 +594,7 @@ function DatenschutzEN() {
         Framework. Vercel is certified under the Data Privacy Framework.
       </p>
 
-      <h2>10. Your Rights</h2>
+      <h2>11. Your Rights</h2>
       <p>
         You have the following rights regarding your personal data:
       </p>
@@ -510,7 +613,7 @@ function DatenschutzEN() {
         </a>
       </p>
 
-      <h2>11. Right to Lodge a Complaint</h2>
+      <h2>12. Right to Lodge a Complaint</h2>
       <p>
         You have the right to lodge a complaint with the competent supervisory
         authority:
@@ -531,7 +634,7 @@ function DatenschutzEN() {
         </a>
       </p>
 
-      <h2>12. Data Retention</h2>
+      <h2>13. Data Retention</h2>
       <p>
         Server log files are deleted after a maximum of 30 days. The language
         preference cookie is stored only for the duration of the browser session.
@@ -539,9 +642,14 @@ function DatenschutzEN() {
         specifications (generally up to 90 days) and can be deleted by you in your
         browser at any time.
       </p>
+      <p>
+        Order and invoice data is stored for seven years due to the statutory
+        retention obligation under § 132 BAO. Correspondence that does not lead
+        to a contract is deleted once the enquiry has been dealt with.
+      </p>
 
       <p className="text-sm text-fru-dark/50 mt-12">
-        Last updated: July 2026
+        Last updated: August 2026
       </p>
     </article>
   );

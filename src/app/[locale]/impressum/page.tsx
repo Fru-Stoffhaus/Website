@@ -1,5 +1,6 @@
-import { setRequestLocale, getTranslations } from "next-intl/server";
+import { setRequestLocale } from "next-intl/server";
 import { STORE_INFO } from "@/lib/constants";
+import { pageMetadata } from "@/lib/pageMetadata";
 
 export async function generateMetadata({
   params,
@@ -7,18 +8,7 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: "Impressum" });
-  return {
-    title: `${t("title")} – ${STORE_INFO.name}`,
-    alternates: {
-      canonical: `/${locale}/impressum`,
-      languages: {
-        de: "/de/impressum",
-        en: "/en/impressum",
-        "x-default": "/de/impressum",
-      },
-    },
-  };
+  return pageMetadata({ locale, namespace: "Impressum", slug: "impressum" });
 }
 
 export default async function ImpressumPage({
@@ -38,7 +28,7 @@ export default async function ImpressumPage({
 
 function ImpressumDE() {
   return (
-    <article className="prose prose-lg max-w-none">
+    <article className="legal-prose max-w-none">
       <h1 className="font-heading text-3xl sm:text-4xl font-bold text-fru-dark mb-8">
         Impressum
       </h1>
@@ -64,7 +54,7 @@ function ImpressumDE() {
       <p>Einzelunternehmen (e.U.)</p>
 
       <h2>Firmenbuchnummer</h2>
-      <p>FN 637754z, Landesgericht Eisenstadt</p>
+      <p>{STORE_INFO.companyRegister}</p>
 
       <h2>UID-Nummer</h2>
       <p>{STORE_INFO.uid}</p>
@@ -117,19 +107,20 @@ function ImpressumDE() {
         und seiner Produkte und Dienstleistungen.
       </p>
 
-      <h2>Online-Streitbeilegung</h2>
+      <h2>Streitbeilegung</h2>
       <p>
-        Verbraucher/innen haben die Möglichkeit, Beschwerden an die
-        Online-Streitbeilegungsplattform der EU zu richten:{" "}
+        Bitte richten Sie allfällige Beschwerden zunächst an die oben angegebene
+        E-Mail-Adresse – wir bemühen uns um eine rasche Lösung. Darüber hinaus
+        können sich Verbraucher/innen an die Schlichtungsstelle{" "}
         <a
-          href="https://ec.europa.eu/consumers/odr"
+          href="https://www.ombudsstelle.at"
           target="_blank"
           rel="noopener noreferrer"
         >
-          https://ec.europa.eu/consumers/odr
-        </a>
-        . Sie können allfällige Beschwerde auch an die oben angegebene
-        E-Mail-Adresse richten.
+          Internet Ombudsstelle
+        </a>{" "}
+        wenden. Die Online-Streitbeilegungsplattform der EU wurde mit 20. Juli
+        2025 eingestellt.
       </p>
 
       <h2>Geltungsbereich</h2>
@@ -187,7 +178,7 @@ function ImpressumDE() {
 
 function ImpressumEN() {
   return (
-    <article className="prose prose-lg max-w-none">
+    <article className="legal-prose max-w-none">
       <h1 className="font-heading text-3xl sm:text-4xl font-bold text-fru-dark mb-8">
         Legal Notice (Impressum)
       </h1>
@@ -254,19 +245,20 @@ function ImpressumEN() {
         services.
       </p>
 
-      <h2>Online Dispute Resolution</h2>
+      <h2>Dispute Resolution</h2>
       <p>
-        Consumers have the option to submit complaints to the EU Online Dispute
-        Resolution platform:{" "}
+        Please direct any complaints to the email address provided above first –
+        we aim to find a quick solution. In addition, consumers may contact the
+        Austrian conciliation body{" "}
         <a
-          href="https://ec.europa.eu/consumers/odr"
+          href="https://www.ombudsstelle.at"
           target="_blank"
           rel="noopener noreferrer"
         >
-          https://ec.europa.eu/consumers/odr
+          Internet Ombudsstelle
         </a>
-        . Alternatively, you may direct complaints to the email address provided
-        above.
+        . The EU Online Dispute Resolution platform was discontinued on 20 July
+        2025.
       </p>
 
       <h2>Scope</h2>

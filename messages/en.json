@@ -8,6 +8,7 @@
     "home": "Home",
     "hours": "Opening Hours",
     "contact": "Contact",
+    "bestellung": "Ordering",
     "about": "About Us",
     "sortiment": "Range",
     "gallery": "Gallery",
@@ -65,7 +66,10 @@
   "Footer": {
     "rights": "© {year} FRU e.U. All rights reserved.",
     "impressum": "Legal Notice",
-    "datenschutz": "Privacy Policy"
+    "datenschutz": "Privacy Policy",
+    "agb": "Terms",
+    "widerruf": "Withdrawal Policy",
+    "bestellung": "Ordering & Shipping"
   },
   "CookieConsent": {
     "message": "We use technically necessary cookies and – only with your consent – marketing cookies (Google Ads) to measure the success of our advertising.",
@@ -83,5 +87,15 @@
   },
   "Datenschutz": {
     "title": "Privacy Policy"
+  },
+  "BestellungVersand": {
+    "title": "Ordering & Shipping",
+    "description": "Order fabrics and sewing supplies from Stoffhaus FRU by email or WhatsApp. Shipping with DPD throughout Austria, free from 70 €."
+  },
+  "AGB": {
+    "title": "Terms and Conditions"
+  },
+  "Widerruf": {
+    "title": "Withdrawal Policy"
   }
 }
