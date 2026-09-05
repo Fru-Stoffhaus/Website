@@ -14,7 +14,8 @@
     "gallery": "Gallery",
     "faq": "FAQ",
     "impressum": "Legal Notice",
-    "datenschutz": "Privacy Policy"
+    "datenschutz": "Privacy Policy",
+    "whatsappChannel": "WhatsApp channel"
   },
   "LanguageSwitcher": {
     "switchTo": "Deutsch",
@@ -24,6 +25,17 @@
     "tagline": "FABRICS · SEWING SUPPLIES · CREATIVITY",
     "welcome": "Welcome to Stoffhaus",
     "subtitle": "Your new fabric store for fabrics and sewing supplies in Wiener Neustadt, Lower Austria"
+  },
+  "Service": {
+    "title": "Sewing Machine Service & Repair",
+    "badge": "Drop-off point",
+    "intro": "Service and repairs for all sewing machine brands – simply drop your machine off at our shop.",
+    "point1": "All sewing machine brands",
+    "point2": "Service, maintenance & repair",
+    "point3": "Drop off directly in store",
+    "partnerLabel": "Expert service by",
+    "partnerName": "Nähcenter Egelwolf",
+    "imageAlt": "Sewing machine service & repair – drop-off point at Stoffhaus FRU, Allerheiligengasse 12, Wiener Neustadt"
   },
   "Sortiment": {
     "title": "Our Range"
@@ -61,7 +73,19 @@
   "Social": {
     "title": "Follow Us",
     "facebook": "Facebook",
-    "instagram": "Instagram"
+    "instagram": "Instagram",
+    "whatsapp": "WhatsApp channel",
+    "whatsappTitle": "Our WhatsApp channel",
+    "whatsappIntro": "Would you like to stay up to date on new fabrics, offers and promotions, but don't use Instagram or Facebook at all? Then our WhatsApp channel is just the thing for you.",
+    "whatsappHow": "Our WhatsApp channel works much like a newsletter – only straight through WhatsApp and without an email address. There we keep you posted on:",
+    "whatsappItem1": "New fabrics and products",
+    "whatsappItem2": "Offers and promotions",
+    "whatsappItem3": "Polls",
+    "whatsappItem4": "News from our shop",
+    "whatsappPrivacy": "You don't have to give us your phone number. Simply follow our channel and get our news straight on your phone.",
+    "whatsappCta": "Open WhatsApp channel",
+    "whatsappQrHint": "Or scan the QR code with your smartphone",
+    "whatsappQrAlt": "QR code for the Stoffhaus FRU WhatsApp channel"
   },
   "Footer": {
     "rights": "© {year} FRU e.U. All rights reserved.",

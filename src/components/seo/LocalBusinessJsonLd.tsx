@@ -70,7 +70,11 @@ export default function LocalBusinessJsonLd() {
         closes: "14:00",
       },
     ],
-    sameAs: [STORE_INFO.social.facebook, STORE_INFO.social.instagram],
+    sameAs: [
+      STORE_INFO.social.facebook,
+      STORE_INFO.social.instagram,
+      STORE_INFO.social.whatsappChannel,
+    ],
   };
 
   return (

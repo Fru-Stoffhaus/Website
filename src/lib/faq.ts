@@ -56,6 +56,10 @@ export const FAQ: Record<"de" | "en", FaqItem[]> = {
       q: "Bieten Sie Näh- oder Änderungsarbeiten an?",
       a: "Nein, wir bieten keine Näh- oder Änderungsservices an. Sehr gerne beraten wir jedoch bei der Auswahl von Stoffen, Materialien und beim Design eurer Projekte.",
     },
+    {
+      q: "Bieten Sie Nähmaschinenservice und Reparaturen an?",
+      a: "Ja. Unser Geschäft ist Annahmestelle für Service und Reparaturen aller Nähmaschinenmarken – Sie geben Ihre Maschine einfach bei uns in der Allerheiligengasse 12 ab. Der Fachservice erfolgt durch das Nähcenter Egelwolf.",
+    },
   ],
   en: [
     {
@@ -95,6 +99,10 @@ export const FAQ: Record<"de" | "en", FaqItem[]> = {
     {
       q: "Do you offer sewing or alteration services?",
       a: "No, we do not offer sewing or alteration services. However, we are very happy to advise you on the selection of fabrics and materials and on the design of your projects.",
+    },
+    {
+      q: "Do you offer sewing machine service and repairs?",
+      a: "Yes. Our shop is a drop-off point for service and repairs of all sewing machine brands – simply bring your machine to us at Allerheiligengasse 12. The expert service is carried out by Nähcenter Egelwolf.",
     },
   ],
 };

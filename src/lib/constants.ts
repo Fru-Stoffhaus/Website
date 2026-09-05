@@ -32,6 +32,9 @@ export const STORE_INFO = {
   social: {
     facebook: "https://www.facebook.com/share/18u5oFdvcs/",
     instagram: "https://www.instagram.com/stoffhaus_fru",
+    // Broadcast channel (newsletter-style), NOT the same as contact.whatsapp
+    // above — that one opens a 1:1 chat with the shop for orders.
+    whatsappChannel: "https://whatsapp.com/channel/0029VbCtXST3gvWic8XLHt2w",
   },
   hours: {
     weekday: { morning: "9:00 – 11:00", afternoon: "12:00 – 17:00" },

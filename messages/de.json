@@ -14,7 +14,8 @@
     "gallery": "Einblicke",
     "faq": "FAQ",
     "impressum": "Impressum",
-    "datenschutz": "Datenschutz"
+    "datenschutz": "Datenschutz",
+    "whatsappChannel": "WhatsApp-Kanal"
   },
   "LanguageSwitcher": {
     "switchTo": "English",
@@ -24,6 +25,17 @@
     "tagline": "STOFFE · NÄHZUBEHÖR · KREATIVITÄT",
     "welcome": "Willkommen bei Stoffhaus",
     "subtitle": "Ihr neues Stoffgeschäft für Stoffe und Nähzubehör in Wiener Neustadt, Niederösterreich"
+  },
+  "Service": {
+    "title": "Nähmaschinenservice & Reparatur",
+    "badge": "Annahmestelle",
+    "intro": "Service und Reparaturen aller Nähmaschinenmarken – geben Sie Ihre Maschine einfach bei uns im Geschäft ab.",
+    "point1": "Alle Nähmaschinenmarken",
+    "point2": "Service, Wartung & Reparatur",
+    "point3": "Abgabe direkt im Geschäft",
+    "partnerLabel": "Fachservice durch",
+    "partnerName": "Nähcenter Egelwolf",
+    "imageAlt": "Nähmaschinenservice & Reparatur – Annahmestelle im Stoffhaus FRU, Allerheiligengasse 12, Wiener Neustadt"
   },
   "Sortiment": {
     "title": "Unser Sortiment"
@@ -61,7 +73,19 @@
   "Social": {
     "title": "Folgen Sie uns",
     "facebook": "Facebook",
-    "instagram": "Instagram"
+    "instagram": "Instagram",
+    "whatsapp": "WhatsApp-Kanal",
+    "whatsappTitle": "Unser WhatsApp-Kanal",
+    "whatsappIntro": "Sie möchten über neue Stoffe, Angebote und Aktionen informiert bleiben, nutzen aber Instagram oder Facebook überhaupt nicht? Dann ist unser WhatsApp-Kanal genau das Richtige für Sie.",
+    "whatsappHow": "Unser WhatsApp-Kanal funktioniert ähnlich wie ein Newsletter – nur direkt über WhatsApp und ohne E-Mail. Dort informieren wir Sie über:",
+    "whatsappItem1": "Neue Stoffe und Produkte",
+    "whatsappItem2": "Angebote und Aktionen",
+    "whatsappItem3": "Umfragen",
+    "whatsappItem4": "Neuigkeiten aus unserem Geschäft",
+    "whatsappPrivacy": "Sie müssen uns dafür keine Telefonnummer mitteilen. Folgen Sie einfach unserem Kanal und erhalten Sie unsere Neuigkeiten direkt auf Ihrem Handy.",
+    "whatsappCta": "WhatsApp-Kanal öffnen",
+    "whatsappQrHint": "Oder QR-Code mit dem Smartphone scannen",
+    "whatsappQrAlt": "QR-Code zum WhatsApp-Kanal von Stoffhaus FRU"
   },
   "Footer": {
     "rights": "© {year} FRU e.U. Alle Rechte vorbehalten.",

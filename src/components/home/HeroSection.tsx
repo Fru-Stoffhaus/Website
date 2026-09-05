@@ -27,7 +27,10 @@ export default async function HeroSection() {
       </div>
 
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6 py-12 sm:py-20">
-        <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+        {/* gap and image width stay small at md: at exactly 768px the h1's
+            longest word cannot shrink, and the image was being clipped by the
+            section's overflow-hidden edge. */}
+        <div className="flex flex-col md:flex-row items-center gap-8 lg:gap-12">
           <div className="flex-1 text-center md:text-left">
             <DashedLine className="w-32 h-2 text-fru-purple/40 mb-4 mx-auto md:mx-0" />
             <p className="font-heading text-xs sm:text-sm tracking-[0.3em] text-fru-dark/70 mb-4">
@@ -45,7 +48,7 @@ export default async function HeroSection() {
             <DashedLine className="w-40 h-2 text-fru-purple/40 mt-6 mx-auto md:mx-0" />
           </div>
 
-          <div className="flex-shrink-0 w-full max-w-[400px]">
+          <div className="flex-shrink-0 w-full max-w-[400px] md:max-w-[300px] lg:max-w-[400px]">
             <Image
               src={heroImage}
               alt="Stoffhaus FRU"

@@ -204,11 +204,14 @@ function DatenschutzDE() {
       <h2>7. Links zu sozialen Medien</h2>
       <p>
         Unsere Website enthält Links zu unseren Profilen auf Facebook und
-        Instagram. Es handelt sich um einfache Hyperlinks – beim Besuch unserer
-        Website werden keine Daten an Meta Platforms, Inc. oder andere
-        Drittanbieter übermittelt. Eine Datenübertragung findet erst statt, wenn
-        Sie aktiv auf einen dieser Links klicken und die jeweilige Plattform
-        besuchen.
+        Instagram sowie zu unserem WhatsApp-Kanal. Es handelt sich um einfache
+        Hyperlinks – beim Besuch unserer Website werden keine Daten an Meta
+        Platforms, Inc. oder andere Drittanbieter übermittelt. Eine
+        Datenübertragung findet erst statt, wenn Sie aktiv auf einen dieser
+        Links klicken und die jeweilige Plattform besuchen. Wenn Sie unserem
+        WhatsApp-Kanal folgen, erhalten wir keine Kenntnis von Ihrer
+        Telefonnummer; die Verarbeitung erfolgt ausschließlich durch WhatsApp
+        Ireland Ltd.
       </p>
 
       <h2>8. Fotos und Bildmaterial</h2>
@@ -516,11 +519,13 @@ function DatenschutzEN() {
 
       <h2>7. Social Media Links</h2>
       <p>
-        Our website contains links to our profiles on Facebook and Instagram.
-        These are simple hyperlinks – no data is transmitted to Meta Platforms,
-        Inc. or other third parties when you visit our website. Data transfer
-        only occurs when you actively click on one of these links and visit the
-        respective platform.
+        Our website contains links to our profiles on Facebook and Instagram as
+        well as to our WhatsApp channel. These are simple hyperlinks – no data
+        is transmitted to Meta Platforms, Inc. or other third parties when you
+        visit our website. Data transfer only occurs when you actively click on
+        one of these links and visit the respective platform. If you follow our
+        WhatsApp channel, we do not learn your phone number; processing is
+        carried out solely by WhatsApp Ireland Ltd.
       </p>
 
       <h2>8. Photos and Images</h2>
